@@ -1,55 +1,933 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Startpage by Nicholas49</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Startpage</h1>
-      <h2 class="project-tagline">tart</h2>
-      <a href="https://github.com/Nicholas49/startpage" class="btn">View on GitHub</a>
-      <a href="https://github.com/Nicholas49/startpage/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Nicholas49/startpage/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<head>
+    <title>HOM</title>
+    <style>
+        body {
+            background-color:#000;
+            margin: 0%;
+            overflow: hidden;
+        }
+        .bboqs {
+            position:relative;
+            left:8vmin;
+            top:70vmin;
+            width:90vmin;
+            height:20vmin;
+            transform: rotate(120deg);
+            z-index:0;
+        }
+        .hx {
+            visibility: hidden;
+            position:relative;
+            overflow: hidden;
+            width: 10vmin;
+            margin-right: auto;
+            margin-left: auto;
+            height:140vmin;
+            transition: all 0.5s;
+        }
+        .gon {
+            visibility: hidden;
+            position:absolute;
+            overflow: hidden;
+            width:26vmin;
+            height:13vmin;
+            transform: rotate(120deg);
+            top:49vmin;
+            left:-10.5vmin;
+        }
+        .in2 {
+            visibility:visible;
+            background-color:#000;
+            transition: background-color 1.5s;
+            transition-timing-function: linear;
+        }
+        .in2:hover{
+            transition: background-color 0.3s;
+        }
+        .in2l {
+            background-color:#666;
+        }
+        .in3 {
+            position: relative;
+            width:5vmin;
+            margin: 0vmin auto;
+            visibility: hidden;
+        }
+        .poy {
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            overflow: hidden;
+            transform: rotate(-60deg);
+        }
+        svg {
+            width:7vmin;
+            position:absolute;
+            left:50%;
+            top:50%;
+            pointer-events:none;
+            transform:translate(-50%,-50%);
+        }
+        a {
+            webkit-backface-visibility: hidden;
+            -webkit-transform: translateZ(0) scale(1.0, 1.0);
+        }
+        div {
+            webkit-backface-visibility: hidden;
+            -webkit-transform: translateZ(0) scale(1.0, 1.0);
+        }
+        .c1 {
+            left:-34.5vmin;
+        }
+        .c2 {
+            left:-22.5vmin;
+        }
+        .c4 {
+            left:1.5vmin;
+        }
+        .c5 {
+            left:13.5vmin;
+        }
+        .r1 {
+            top:35vmin;
+        }
+        .r2 {
+            top:42vmin;
+        }
+        .r4 {
+            top:56vmin;
+        }
+        .r5 {
+            top:63vmin;
+        }
+        .r6 {
+            top:70vmin;
+        }
+        .r7 {
+            top:77vmin;
+        }
+        .r8 {
+            top:84vmin;
+        }
+        .r9 {
+            top:91vmin;
+        }
+        .red {}
+        .red:hover{
+            background-color:#d00;
+        }
+        .blue {}
+        .blue:hover{
+            background-color:#00d;
+        }
+        .purple {}
+        .purple:hover{
+            background-color:#60a;
+        }
+        .green {}
+        .green:hover{
+            background-color:#0a0;
+        }
+        .yellow {}
+        .yellow:hover{
+            background-color:#dc0;
+        }
+        .cyan {}
+        .cyan:hover{
+            background-color:#66f;
+        }
+        .orange {}
+        .orange:hover{
+            background-color:#da0;
+        }
+        .pink {}
+        .pink:hover{
+            background-color:#d77;
+        }
+        .maroon {}
+        .maroon:hover{
+            background-color:#800;
+        }
+        .gray {}
+        .gray:hover{
+            background-color:#888;
+        }
+        p {
+            position:absolute;
+            color:#fff;
+            font-size:7vmin;
+            font-family: Verdana, Geneva, sans-serif;
+            left:41%;
+            top:-37%;
 
-    <section class="main-content">
-      <p>```<code>### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here [using GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/), select a template crafted by a designer, and publish. After your page is generated, you can check out the new</code>gh-pages` branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/Nicholas49/startpage">Startpage</a> is maintained by <a href="https://github.com/Nicholas49">Nicholas49</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
+    <script>
+        function set() {
+            var a;
+        }
+        function drop(a, wty) {
+            if (wty.a === undefined) {
+                a.style.width = "70vmin";
+                a.parentNode.parentNode.children[1].style.zIndex = "0";
+                a.parentNode.parentNode.children[2].style.zIndex = "0";
+                a.parentNode.style.zIndex = "1";
+                wty.a = 1;
+            } else {
+                a.style.width = "10vmin";
+                wty.a = undefined;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="margin:0 auto;width:10px;height:10px">
+        <div class="bboqs">
+            <div class="hx" onclick="drop(this, set)">
+                <div class="poy" style="z-index:0">
+                    <div class="in2 poy in2l">
+                        <div class="in3">
+                            <svg viewbox="0 0 300 300" style="visibility:visible;top:69vmin;left:3.3vmin" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <g>
+                            <path fill="#000" stroke-width="0" d="m40,170l0,100l150,0l0,-100l-75,-75"/>
+                            </g>
+                            </svg>
+                            <a href="https://onedrive.live.com/about/en-us/">
+                                <div class="gon c1">
+                                    <div class="poy">
+                                        <div class="in2 poy blue">
+                                            <svg viewbox="0 0 300 300">
+                                            <g transform="translate(0,-52.36)">
+                                            <rect height="300" width="300" y="1" x="0" stroke-width="0" fill="#fff" mask="url(#od)" id="svg_10"/>
+                                            <mask id="od">
+                                                <path style="fill:#fff;stroke-width:0" d="m 232.1,261 c 55.5,-2 56.5,-89 -5.4,-93 -2.6,-55 -78.8,-67 -104.9,-25 -43.2,-17 -70,16.5 -65.1,44.7 -46.6,10 -39.3,68.4 4.3,71 z"/>
+                                                <path style="fill:#fff;stroke:#000;stroke-width:7.6" d="m 116.8,273.25 c -45.6,-1.7 -49.5,-74 1.4,-77.3 5.1,-44.6 62,-58.8 90,-23.9 32.1,-13.9 61.8,11.1 60.3,37.2 37.9,7.5 30,68 -7,64.4 z"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c1 r5">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.theonion.com/">
+                                <div class="gon c1 r7">
+                                    <div class="poy">
+                                        <div class="in2 poy green">
+                                            <svg viewBox="0 0 300 300" version="1.1">
+                                            <g transform="translate(0,0)">
+                                            <mask id="on">
+                                                <rect style="fill:#000;stroke-width:0" width="320" height="300" x="0" y="0" />
+                                                <path style="fill:#fff;stroke-width:0" d="m 31.078048,259.5266 c 21.696311,-21.05787 6.094288,-35.53866 6.094288,-35.53866 0,0 -33.7257531,-47.26208 -21.503891,-90.87319 11.163729,-30.33886 29.527418,-46.0635 72.717036,-63.64965 35.249859,-14.35319 64.681649,-15.55005 105.894479,-19.51449 29.14188,-2.80328 47.47098,-1.44264 48.00012,-19.189 0.33236,-11.14673 -5.78534,-23.5599 3.10531,-23.39794 7.38044,0.13445 7.08888,1.37884 6.89321,10.24149 -0.17107,7.7491 0.8397,9.8956 4.21644,10.57989 8.55367,1.73345 9.73335,-16.69412 15.36355,-11.09976 5.60061,5.56495 6.70035,6.83896 1.03454,12.68522 -5.91867,6.10717 -8.96119,10.12733 2.02352,9.49489 9.67594,-0.55711 16.08363,3.03973 8.74398,8.03253 -15.70852,10.6857 -20.65197,2.92636 -27.72606,12.97835 -9.7142,13.80353 -3.37084,53.21548 -3.37084,72.83847 0,19.62301 5.47078,99.03878 -36.15894,132.17875 -31.3086,24.9236 -74.33971,38.5108 -110.59479,16.6027 -14.028598,-8.4772 -32.786821,-10.8784 -48.047345,6.5782 -16.794898,19.2117 -14.391888,2.4693 -10.283652,-5.4366 0,0 1.370771,-5.9597 -9.058459,1.2648 -3.989206,2.7635 -7.333023,-0.1916 -2.295987,-10.5758 1.616312,-3.3323 -2.168661,-2.2621 -12.728877,-1.8711 -8.671669,0.3211 7.682368,-12.3291 7.682368,-12.3291 z"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 133.5928,148.28886 c 25.624,-35.64895 66.96746,-63.73183 78.01592,-72.30221 9.83043,-7.62554 27.45429,-19.33082 6.406,-20.08396 -7.81483,-0.27961 -27.66007,2.90122 -51.93436,11.54827 -27.48739,9.79164 -63.24637,32.94843 -79.388645,47.69935 -13.462699,12.30238 -37.359586,32.16735 -40.952645,77.07221 -2.154568,26.92714 18.531646,63.26448 29.055788,55.23083 24.394892,-53.58076 38.167252,-70.28222 58.797942,-99.16449 z"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 43.148034,132.14499 c 0,0 20.650681,-23.15663 35.594771,-32.86439 9.71633,-6.31178 41.473795,-22.1244 48.742385,-24.05759 7.26861,-1.93321 7.4824,-3.6516 -10.9029,-0.85921 -24.559602,5.48969 -52.909961,18.32003 -69.803103,35.21193 -9.768281,10.11201 -11.970506,16.45925 -13.643171,21.0046 -2.353826,6.39635 -3.867948,18.94466 2.660232,11.01585 1.942079,-2.35874 7.351786,-9.45119 7.351786,-9.45119 z"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 122.30661,195.37736 c 0,0 31.1672,-40.86283 45.02478,-55.3542 11.05138,-11.55682 33.4895,-32.76413 37.39661,-35.35077 3.90711,-2.58664 30.14056,-32.5917 21.21002,4.13863 -8.93053,36.73032 -17.67501,53.28482 -21.76817,58.45811 -4.09317,5.17328 -19.3495,27.07352 -40.18741,36.73034 -20.83792,9.65681 -25.35709,9.92679 -31.45615,11.17054 -7.30464,1.48947 -24.02313,4.52785 -14.31285,-12.89498 2.11203,-3.78956 4.09317,-6.89767 4.09317,-6.89767 z"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 143.68984,240.89469 c 21.71179,0.32982 34.10548,-4.18327 43.62049,-10.65546 10.34477,-7.03658 30.70017,-21.71667 38.27567,-49.45719 3.87337,-14.18375 11.39611,-32.76532 8.79306,-3.21672 -0.92442,10.49354 -7.41375,30.961 -13.79304,43.82791 -2.2585,4.55539 -14.99992,31.76517 -51.20665,42.21947 -36.20672,10.4544 -55.17214,1.6084 -55.17214,1.6084 0,0 -13.41083,-2.2609 -8.62065,-21.91392 7.63372,-17.88152 21.8066,-3.21537 38.10326,-2.41249 z"/>
+                                            </mask>
+                                            <rect mask="url(#on)" style="fill:#fff;stroke-width:0" width="300" height="300" x="0" y="0" />
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.youtube.com">
+                                <div class="gon c2 r2">
+                                    <div class="poy">
+                                        <div class="in2 poy red">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <title>Layer 1</title>
+                                            <rect id="svg_2" mask="url(#rofy)" height="120" width="250" y="90" x="25" fill="#fff"/>
+                                            <rect id="svg_3" mask="url(#rofy)" height="200" width="170" y="50" x="62.5" fill="#fff"/>
+                                            <ellipse id="svg_4" ry="40" rx="40" cy="90" cx="65" fill="#fff"/>
+                                            <ellipse id="svg_5" ry="40" rx="40" cy="210" cx="65" fill="#fff"/>
+                                            <ellipse id="svg_6" ry="40" rx="40" cy="90" cx="235" fill="#fff"/>
+                                            <ellipse id="svg_7" ry="40" rx="40" cy="210" cx="235" fill="#fff"/>
+                                            <mask height="300" width="300" y="0" x="0" id="rofy">
+                                                <rect id="svg_8" height="300" width="300" y="0" x="0" stroke-width="0" fill="#fff"/>
+                                                <polygon id="svg_9" stroke-width="0" points="200,150 110,200 110,100 200,150" fill="#000"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.yahoo.com/">
+                                <div class="gon c2 r4">
+                                    <div class="poy">
+                                        <div class="in2 poy purple">
+                                            <p>Y</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.ebay.com/">
+                                <div class="gon c2 r6">
+                                    <div class="poy">
+                                        <div class="in2 poy green">
+                                            <p style="position:absolute;color:#fff;font-size:9vmin;font-family: Arial, Helvetica, sans-serif;left:40%;top:-65%">e</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://redlettermedia.com/">
+                                <div class="gon c2 r8">
+                                    <div class="poy">
+                                        <div class="in2 poy maroon">
+                                            <p style="font-size:3vmin;font-style:italic;font-family: Arial black, Helvetica, sans-serif;left:33%;top:8%">RLM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.reddit.com">
+                                <div class="gon r1">
+                                    <div class="poy">
+                                        <div class="in2 poy cyan">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <mask id="gooby" x="0" y="0" width="600" height="500">
+                                                <ellipse fill="#fff" stroke-width="0" cx="150" cy="150" rx="120" ry="80"/>
+                                                <ellipse fill="#000" stroke-width="0" cx="110" cy="130" rx="20" ry="20"/>
+                                                <ellipse fill="#000" stroke-width="0" cx="190" cy="130" rx="20" ry="20"/>
+                                                <path d="m110,190c40,25 80,0 80,0" stroke-linecap="round" stroke-width="10" stroke="#000" fill="none"/>
+                                            </mask>
+                                            <rect fill="#fff" stroke-width="0" x="0" y="0" width="370" height="250" mask="url(#gooby)"/>
+                                            <ellipse fill="#000" stroke="#fff" stroke-width="10" cx="55" cy="100" rx="25" ry="25" fill-opacity="0"/>
+                                            <ellipse fill="#000" stroke="#fff" stroke-width="10" cx="245" cy="100" id="svg_1" rx="25" ry="25" fill-opacity="0"/>
+                                            <line y2="2" x2="167" y1="74" x1="147" stroke-linecap="round" stroke-width="10" stroke="#fff" fill="none"/>
+                                            <line y2="28" x2="210" y1="2" x1="167" stroke-linecap="round" stroke-width="10" stroke="#fff" fill="none"/>
+                                            <ellipse fill="#000" stroke="#fff" stroke-width="10" cx="230" cy="35" rx="20" ry="20" fill-opacity="0"/>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.bing.com/">
+                                <div class="gon r7">
+                                    <div class="poy">
+                                        <div class="in2 poy yellow">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <mask id="xix">
+                                                <rect fill="#000" stroke-width="0" x="0" y="0" width="300" height="300"/>
+                                                <path stroke-width="0" fill="#fff" d="m59,9l50.31445,19.82161l0,198.21605l70.85225,-45.71532l-34.95793,-18.14655l-21.84872,-60.72112l111.74054,43.97045l0,63.51288l-126.09827,80.9615l-49.9399,-31.40747l0,-250.42223l-0.06243,-0.06979l0,-0.00001l0.00001,0z"/>
+                                            </mask>
+                                            <rect id="svg_3" mask="url(#xix)" fill="#fff" x="0" y="0" width="300" height="300"/>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.amazon.com">
+                                <div class="gon r9">
+                                    <div class="poy">
+                                        <div class="in2 poy orange">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <title>Layer 1</title>
+                                            <rect mask="url(#coc)" height="300" width="300" y="0" x="0" stroke-width="0" fill="#fff" id="svg_2"/>
+                                            <mask id="coc">
+                                                <path d="m102.06103,86.18499c-9.64506,7.70157 -14.14063,12.18105 -17.98232,10.6093c-4.08688,-1.57175 -2.86081,-6.05122 0.20435,-13.98856c5.96685,-15.79607 9.80854,-17.28925 16.91972,-22.71177c13.89543,-10.37354 32.69509,-13.34415 46.59052,-13.56419c0.66206,-0.44009 41.66992,2.78985 55.96588,22.64104c14.29593,19.8512 2.92618,90.02979 8.43533,100.08112c5.50914,10.05133 16.64998,18.60953 9.62871,24.29922c-3.51471,2.84488 -12.80832,9.93346 -18.96317,15.32457c-6.13033,5.42249 -8.50072,6.36559 -12.26067,4.42447c-7.56076,-3.85864 -16.8952,-20.1734 -17.65535,-19.17534c-0.39235,0.4715 -7.5771,7.93732 -15.85716,13.18697c-8.30452,5.23393 -17.73709,8.2438 -34.72221,7.99232c-33.97839,-0.50294 -45.74046,-23.94557 -45.98566,-44.38618c-0.24931,-20.44452 8.99117,-42.62581 38.38406,-52.0799c29.40926,-9.44618 52.31217,-6.72707 52.48385,-9.36761c0.09807,-1.32027 0.35144,-10.03561 -0.70296,-16.27547c-1.05441,-6.23196 -5.72165,-12.57399 -12.83281,-14.27934c-14.23058,-2.93132 -23.37704,2.35762 -27.43124,6.95501c-3.2695,4.59343 -3.84985,11.58376 -7.70787,14.63299c-3.85802,3.04919 -39.00526,-3.67004 -34.19092,-3.92937" stroke-width="0" fill="#ffffff" id="svg_3"/>
+                                                <path fill="#000" stroke-width="0" d="m165.35481,133.52153c0.32883,15.70131 1.94008,40.93941 -19.12938,48.46521c-21.0694,7.52579 -25.48386,-10.92131 -25.89488,-12.29808c-0.43571,-1.39221 -5.24475,-19.9631 10.72791,-29.18279c15.97267,-9.21968 32.15082,-7.7733 33.2113,-7.91252c1.06042,-0.13924 1.32352,0.44862 1.13443,0.75026" id="svg_4"/>
+                                                <path d="m24.06359,235.92792c2.69955,-16.10649 50.52359,18.14642 129.48564,18.95352c78.96671,0.8071 106.88382,-26.74956 114.61014,-19.14864c7.72629,7.60979 -52.84613,40.46135 -125.02669,38.78508c-72.18056,-1.67627 -134.14005,-50.28847 -130.00321,-54.24411c4.13311,-3.94681 25.85059,12.7007 45.37117,18.41248c19.5206,5.71176 -50.62134,1.97781 -31.1473,-14.78499" stroke-width="0" fill="#ffffff" id="svg_5"/>
+                                                <path fill="#fff" stroke-width="0" d="m288.71344,221.75513c0.78113,-2.31839 2.08301,14.66473 -5.83743,26.72037c-7.9205,12.0556 -9.47437,14.27182 -12.80884,12.82581c-3.33447,-1.44604 2.96494,-6.79015 5.74509,-18.88503c2.78012,-12.09489 1.94858,-10.64099 1.34384,-12.70004c-0.61313,-2.05118 -10.13785,-3.12 -19.20901,-2.65237c-9.0627,0.47154 -14.58942,2.38911 -15.7401,0.43224c-1.1507,-1.94902 5.83745,-7.7332 21.43056,-9.39142c15.58905,-1.65823 24.9541,1.58359 24.94571,2.90781" id="svg_6"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.habitica.com">
+                                <div class="gon c4 r2">
+                                    <div class="poy">
+                                        <div class="in2 poy purple">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <mask id="xox">
+                                                <rect fill="#000" stroke-width="0" x="113.7436" y="416.18582" width="434" height="328"/>
+                                                <path fill="#fff" stroke-width="0" d="m150,280c101.5,5 5,4 -7,4c-12,0.05 -51,-0.5 -62,-3c-23,-5.5 -32,-15 -32.5,-29c-1.5,-28 37.5,-39 33,-58c-2,-9 -8,-8.5 -13,-8c-4.5,0.25 -5.3,-3 -3.5,-4c2,-1 6,-7.8 13.5,-4.5c7,3 14,13 12.5,22c-3,18 -32,35 -32,48c-0.075,6.8 0.7,11.5 5,15c4.5,3.5 8,5.5 18,6.5c10,1.15 24,-3 28,-7c2,-2 -1.5,-20 -0.5,-36c1,-16.5 6,-33.5 13.20157,-39.9c7.16,-6.4 10.14,-9.37 19,-10c8.8,-0.73 13.8,-0.815 13.8,-4.25c-0.044,-3.4 -8.35,-2.78 -21.2,-5c-12.87,-2.25 -18.8,-4.9 -36.6,-16.7c-17.7,-11.8 -26.4,-36 -21.8,-35.5c4.6,0.5 5,1.49 12.9,1.8c7.885,0.33 24.68,-1.28 24,-4.84c-0.23,-3.56 -20.59,6.5 -50,-14c-29.5,-20.5 -33.6,-74 -28.6,-76.18c2.5,-1.1 7.4,5.86 14.7,13.2c7.33,7.36 18.4,16.23 27.08,23.57c17.4,14.7 45.43,21.78 58.23,29.88c12.8,8 17.5,19 19.3,20c0.86,0.36 2.9,4.24 5.7,6.3c2.8,2 6.36,1.9 7,1c0.58,-0.83 0.14,-9 0.27,-13.5c0.13,-4.5 1.75,-10 1.24,-11.75c-0.5,-1.42 -0.5,-1.1 -3.9,-2.2c-3.37,-1.14 -8.18,-2 -12.5,-4.5c-8.7,-4.8 -12.8,-12 -11,-14c1.5,-2.5 2.5,0.29 12,-0.5c9.5,-0.75 10.6,-1.7 22,-7.6c11.4,-5.89 18,-11.6 30,-7c12,4.7 17.5,-3.34 28.32,-1.62c5.4,0.86 9.6,7.49 11.12,15.18c1.535,7.7 0.42,16.655 -2.015,17.05c-4.87,0.786 -17.25,-1.87 -19.09,6.77c-1.83,8.6 10.73,11.5 19.8,20.6c9,9 16.16,35.33 12.45,39.59c-1.856,2.13 -2.62,0.8 -4.34,0.05c-1.7,-0.75 -2.8,-0.73 -3.35,0.55c-1.07,2.56 -0.8,6 2.5,14.5c3.3,8.3 4.8,15 2.5,27.7c-2,12.7 -13,20.6 -14,23c-1,2.3 -0.9,13.4 -0.23,25.26c0.72,11.8 -1.5,20 1.37,22.91c1.46,1.3 4.33,3.25 8.37,3.35c4.03,0.1 8.52,-2.2 13.42,-2.16c4.9,0.04 6.9,4.3 8.5,7.2c1.6,3 3.5,8.27 1.8,8.65c-1.7,0.38 -58.5,0.26 -60.7,0.34c-2.2,0.085 -1.5,-8.9 1.2,-11.5c2.7,-2.6 9,-1.3 11.2,-4.7c2.2,-3.37 1.2,-8.7 -2.46,-15.27c-3.64,-6.6 -4.9,-10.49 -14.62,-15.5c-9.71,-5 -20.75,0.425 -26.65,4.6c-11.8,8.35 -15.8,19.68 -15.19,21.8c0.635,2.12 0.98,6.18 9.2,5.81c8.22,-0.36 17.67,-1.94 20.78,-1.23c6.22,1.42 6.65,11.816 6.63,16.95"/>
+                                                <rect fill="#fff" stroke-width="0" x="23" y="130" width="15.6" height="15"/>
+                                                <rect fill="#fff" stroke-width="0" x="53" y="160" width="30" height="30"/>
+                                                <rect fill="#fff" stroke-width="0" x="38" y="145" width="30" height="30"/>
+                                                <rect fill="#fff" stroke-width="0" x="173.24031" y="195" width="15" height="35.6"/>
+                                            </mask>
+                                            <rect mask="url(#xox)" fill="#fff" stroke-width="0" x="4" y="5" width="286" height="286" stroke="#000"/>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.comedycentral.com">
+                                <div class="gon c4 r4">
+                                    <div class="poy">
+                                        <div class="in2 poy pink">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <rect height="300" width="300" y="0" x="0" stroke-width="0" fill="#fff" mask="url(#kit)"/>
+                                            <mask id="kit">
+                                                <rect height="492" width="653" y="0" x="0" stroke-width="0" fill="#000"/>
+                                                <ellipse ry="140" rx="140" cy="150" cx="150" stroke-width="0" fill="#fff"/>
+                                                <ellipse ry="105" rx="105" cy="150" cx="150" stroke-width="0" fill="#000"/>
+                                                <polygon stroke-width="0" points="150,150 0,240 0,60 180,150 " fill="#000"/>
+                                                <ellipse ry="70" rx="70" cy="150" cx="150" stroke-width="0" fill="#fff"/>
+                                                <ellipse ry="35" rx="35" cy="150" cx="150" stroke-width="0" fill="#000"/>
+                                                <polygon stroke-width="0" points="150,150 230,200 230,100 150,150 " fill="#000"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.pulaskibank.com/">
+                                <div class="gon c4 r6">
+                                    <div class="poy">
+                                        <div class="in2 poy cyan">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <rect mask="url(#fof)" height="300" width="300" y="0" x="0" stroke-width="5" stroke="#000" fill="#fff"/>
+                                            <mask id="fof">
+                                                <rect height="300" width="300" y="0" x="0" fill="#000"/>
+                                                <rect fill="#fff" stroke-width="0" x="10" y="260" width="280" height="20"/>
+                                                <rect fill="#fff" stroke-width="0" x="20" y="240" width="260" height="25"/>
+                                                <rect fill="#fff" stroke-width="0" x="30" y="220" width="240" height="25"/>
+                                                <rect fill="#fff" stroke-width="0" x="50" y="85" width="30" height="150"/>
+                                                <rect fill="#fff" stroke-width="0" x="106.66" y="85" width="30" height="150"/>
+                                                <rect fill="#fff" stroke-width="0" x="163.32" y="85" width="30" height="150"/>
+                                                <rect fill="#fff" stroke-width="0" x="220" y="85" width="30" height="150"/>
+                                                <polygon stroke-width="0" points="150,10 10,100 290,100 150,10 " fill="#fff"/>
+                                                <text font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="60" y="80" x="147" stroke-width="0" fill="#000">P</text>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.w3schools.com/">
+                                <div class="gon c4 r8">
+                                    <div class="poy">
+                                        <div class="in2 poy green">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <rect mask="url(#gog)" height="300" width="300" y="0" x="0" stroke-width="0" fill="#fff"/>
+                                            <mask id="gog">
+                                                <rect fill="#000" stroke-width="0" x="0" y="0" width="300" height="300"/>
+                                                <path d="m186,111.7c-0.87,-7.5 -2.34,-20.7 8,-33.25161c10.27504,-12.58627 26.19462,-17.0935 45.28707,-17.3c38.2,-0.4 52,23.26 56.2,29.7c4,6.4 2,120 0.6,125c-1.3,5.17 -11.9,40 -57.6,44.8c-45.7,4.8 -62.6,-33 -63.4,-53c-0.8,-20 4,-96 4,-96l0.6,0l6.4,0z" fill="#fff"/>
+                                                <circle r="32" cy="203" cx="236" stroke-width="0" fill="#000"/>
+                                                <circle r="30" cy="114" cx="240" stroke-width="0" fill="#000"/>
+                                                <path d="m163.41024,111.49618l64.26453,-0.65784l1.65205,90.45065l-23.12863,3.28911c0,0 -54.35226,3.94696 -54.35226,3.12468c0,-0.82228 11.56432,-96.20661 11.56432,-96.20661l0,0l0,0z" stroke-width="0" fill="#000"/>
+                                                <path d="m6.8,126.2l24.2,-3.6c0,0 -1,17.7 16,27.5c17,9.7 33.7,2.86 41.6,-8.7c7.86,-11.6 10,-28 10,-28.6c0,-0.1 22.8,0.6 22.4,0.86c-0.4,0.3 -2.3,26.7 18,38c10,5.8 25.7,4.8 33.7,-2.9c8,-7.7 8.5,-23 8.5,-23c0,0.23 25,-3 25,-2.7c0.26,0.2 0.1,35 -25,49c-12.5,7 -28,9.4 -39,7.7c-11,-1.7 -18,-7 -20,-8.8c-3.4,-3 -11.8,-11.4 -11.5,-13c0.35,-2 -17.6,25.6 -46,24.1c-28.4,-1.4 -35,-8.3 -44.6,-18.8c-9.6,-10.5 -14,-37 -14,-37z" stroke-width="0" fill="#fff"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.escapistmagazine.com/">
+                                <div class="gon c5">
+                                    <div class="poy">
+                                        <div class="in2 poy blue">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <rect fill="#fff" stroke-width="0" x="0" y="0" width="300" height="300" mask="url(#es)"/>
+                                            <mask id="es">
+                                                <rect stroke="#000" height="248" width="351" y="0" x="0" stroke-width="0" fill="#000"/>
+                                                <path d="m139.2627,34.3125c0,0 20.49609,-4.60547 24.39844,11.63672c3.90234,16.24218 -3.58594,24.36328 -10.33594,32.80078c-6.75,8.4375 -3.375,1.6875 -2.25,4.5c1.125,2.8125 171.87891,-53.19141 175.35937,-53.50781c3.48047,-0.31641 4.92188,0.73828 4.60547,4.04297c-0.31641,3.30469 -10.75781,9.14062 -12.44531,9.14062c-1.6875,0 -38.8125,16.62891 -41.625,16.62891c-2.8125,0 -67.78125,18.63281 -71.71875,20.88281c-3.9375,2.25 -6.92578,4.5 -15.92578,6.1875c-9,1.6875 -47.5,14.8 -50.8,15c-3.4,1.1 -6.5,7.35 -11.5,6.8c-2.5,-0.3 -8.1,3.1 -11.76,4.75c-3.65,1.6 -10.5,4 -14.1515,6.8c-3.7,2.8 -13.9,19.7 -16.9,28.8c-3.05,9.1 -7.86,28.1 -8.41882,37.6853c-1.125,19.125 12.3,21.95 24,18.85c12.66,-3.1 21.2,-6.5 35,-15.6c13.85,-9.1 36.25,-31.5 36.24609,-30.9375c0,0.5625 15.1875,-6.1875 2.25,9.5625c-6.46875,7.875 -28.65619,36.20489 -35.61355,41.15231c-3.47868,2.47371 -5.46357,6.57689 -9.14588,7.42315c-3.68232,0.84626 -8.7341,0.86259 -8.38195,0.95c0.18,0.05 0.03,2.1 -2.3,3.66c-1.16,0.77 -7.1,1.46 -8.86318,3.73175c-1.79146,2.2739 -16.30993,6.36933 -24,3.75c-3.8,-1.3 -14.86,-7.2 -22.75,-17.5c-7.9,-10.2 -11.7,-24.8 -11.6,-27.3c0.20214,-4.93946 -3.18164,-16.66406 -1.24804,-27.61523c1.9336,-10.95117 5.73046,-28.31836 5.57226,-27.84375c-0.1582,0.47461 -37.30078,16.09277 -31.4209,4.96582c2.93994,-5.56348 3.98144,-9.55371 8.48034,-13.42749c4.49891,-3.87378 25.26966,-10.00415 28.98744,-13.44067c3.7,-3.4 9.8,-12.15 18.2,-25.05c4.2,-6.45 7.2,-6.77 12.5,-15.65772c2.67462,-4.44397 7.60117,-11.74219 13.32903,-16.96921c5.72786,-5.22701 12.25704,-8.38283 14.34004,-10.23733c8.33203,-7.41797 19.01953,-5.58984 19.01953,-5.58984z" stroke-width="0" stroke="#000000" fill="#ffffff"/>
+                                                <path d="m106.18618,97.24111c0,0 4.90759,-16.94421 12.50134,-27.06922c7.59375,-10.125 9.70313,-11.39062 11.8125,-14.76562c2.10938,-3.375 5.86341,-12.21295 11.17145,-10.37055c5.30804,1.84241 5.08393,5.15809 5.5058,8.37323c0.42187,3.21515 -1.04645,14.1839 -5.59643,21.71338c-4.54999,7.52949 -12.36787,12.60846 -17.9643,16.16474c-2.79822,1.77814 -7.35604,4.26778 -10.94733,4.97804c-3.59129,0.71027 -6.48303,0.976 -6.48303,0.976z" stroke-width="0" stroke="#000" fill="#000"/>  
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://whentowork.com/">
+                                <div class="gon c5 r5">
+                                    <div class="poy">
+                                        <div class="in2 poy blue">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <rect height="300" width="300" y="1" x="0" stroke-width="0" fill="#fff" mask="url(#ww)" id="svg_10"/>
+                                            <mask id="ww">
+                                                <rect height="300" width="300" y="0" x="0" stroke-width="0" fill="#000" id="svg_2"/>
+                                                <ellipse ry="129.00798" rx="128.7745" cy="147.13876" cx="157.85886" stroke-width="0" fill="#fff"/>
+                                                <ellipse ry="117.39401" rx="117.39401" cy="148.86753" cx="158.47324" stroke-width="0" fill="#000"/>
+                                                <rect height="25.60314" width="9.0359" y="37.56638" x="156.91369" stroke-width="0" fill="#fff"/>
+                                                <rect height="7.67493" width="25.16496" y="148.81926" x="52.1721" stroke-width="0" fill="#fff"/>
+                                                <ellipse ry="23.37906" rx="22.45456" cy="216.78944" cx="126.19581" stroke-width="0" fill="#fff"/>
+                                                <rect transform="rotate(18.26, 262.875, 190.529)" height="304.65805" width="142.60758" y="38.19977" x="191.57149" stroke-width="0" fill="#000" id="svg_5"/>
+                                                <path d="m55.70176,97.27892l11.76609,-4.38226l39.50043,117.02451l40.82114,6.2339l13.80716,-39.25505l20.95082,60.73425l25.33313,0.34566l56.7294,-171.15453l-30.01555,-0.37033l-38.8401,126.03587l-34.09766,-91.96542l-33.76749,92.70609l-33.76747,-109.00063l12.48644,-4.87603l-40.52096,-36.78619" stroke-width="0" fill="#ffffff" id="svg_9"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://en.m.wikipedia.org/wiki/Main_Page">
+                                <div class="gon c5 r7">
+                                    <div class="poy">
+                                        <div class="in2 poy gray">
+                                            <p style="font-family: 'Linux Libertine', 'Times New Roman', Times, serif;left:37%;top:-30%">W</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bboqs" style="left:14vmin;top:39.5vmin">
+            <div class="hx" onclick="drop(this, set)">
+                <div class="poy">
+                    <div class="in2 poy in2l">
+                        <div class="in3">
+                            <svg viewBox="0 0 300 300" style="visibility:visible;top:69.9vmin;left:3.3vmin" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <g>
+                            <path d="m 25,65 180,0 0,180 -180,0 Z" style="fill:#000;stroke-width:0" />
+                            </g>
+                            </svg>
+                            <a href="">
+                                <div class="gon c1">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c1 r5">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c1 r7">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c2 r2">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c2 r4">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://pcgamingwiki.com/wiki/Home">
+                                <div class="gon c2 r6">
+                                    <div class="poy">
+                                        <div class="in2 poy purple">
+                                            <svg viewBox="0 0 300 300">
+                                            <g transform="translate(0,-752.36)">
+                                            <rect fill="#fff" stroke-width="0" x="0" y="752.36" width="300" height="300" mask="url(#pc)"/>
+                                            <mask id="pc">
+                                                <rect style="fill:#000" width="300" height="300" x="0" y="752.36" />
+                                                <g>
+                                                <path style="fill:#fff;stroke:#000;stroke-width:10" d="M 60.1,1003 162.2,1039 244.1,1024.1 129.18,994.6 Z" points="162.2,1039 244.1,1024.1 129.2,994.6 60.1,1003"/>
+                                                <path style="fill:#fff;stroke:#000;stroke-width:10;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dashoffset:0" d="m 60.1,809.26 0,193.7 69,-8.3 0,-178.7 z" points="60.1,1003 129.17863,994.6447 129.17863,815.97295 60.123087,809.26001" />
+                                                <path style="fill:#fff;stroke:#000;stroke-width:10;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4"
+                                                      d="m 129.2,816 115,-31.5 0,239.6 -115,-29.5 z"
+                                                      points="244.1,784.5 244.1,1024.1 129.2,994.6 129.2,816"/>
+                                                <path style="fill:#fff;stroke:#000;stroke-width:10;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4" d="m 60.123087,809.26001 102.039263,-37.70019 81.97413,12.93007 -114.95785,31.48306 z" points="162.16235,771.55982 244.13648,784.48989 129.17863,815.97295 60.123087,809.26001"/>
+                                                <path style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke:#000;stroke-width:10;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" d="m 162.16235,771.55982 0,267.47018 81.97413,-14.9367 0,-239.60341 z" points="162.16235,1039.03 244.13648,1024.0933 244.13648,784.48989 162.16235,771.55982"/>
+                                                <path style="fill:#fff;stroke:#000;stroke-width:10" d="m 60.1,809.26 102,-37.7 0,267.5 -102,-36 z" points="162.16235,771.55982 162.16235,1039.03 60.123087,1002.9824 60.123087,809.26001"/>
+                                                </g>
+                                                <g>
+                                                <path style="fill:#000;stroke-width:0" d="m 230.56792,845.2 0.22519,-0.0324 0,-15.66635 -0.22519,0.0404 z" points="230.79311,845.20519 230.79311,829.53884 230.56792,829.57927 230.56792,845.23757"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 176.8,841.46 0,-16.83052 53.78076,4.94732 0,15.6583" points="176.78716,824.63195 230.56792,829.57927 230.56792,845.23757 176.78716,841.46247"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 176.8,824.6 0.2,-0.0462 53.79359,4.95307 -0.22519,0.0404 z" points="177,824.58577 230.79311,829.5 230.56792,829.57927 176.78716,824.63195"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 176.8,841.46 0.21236,-0.0369 53.79359,3.77961 -0.22519,0.0324 z" points="177,841.42558 230.79311,845.20519 230.56792,845.23757 176.78716,841.46247"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 177,841.4 0,-16.8 53.8,5 0,15.7 z" points="177,824.58577 230.79311,829.53884 230.79311,845.20519 176.99952,841.42558"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 176.78716,841.46 0.21236,-0.0369 0,-16.83981 -0.21236,0.0462 z" points="176.99952,841.42558 176.99952,824.58577 176.78716,824.63195 176.78716,841.46247"/>
+                                                </g>
+                                                <g>
+                                                <path style="fill:#000;stroke-width:0" d="m 229.3,876 0,0 0,17.1 0,0 z" points="229.26186,875.9506 229.26,893 229.26,893 229.26,876"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 177.8,874.5 0,18.35 51.45471,0.18577 0,-17.1 z" points="177.8,892.9 229.26,893.1 229.26,876 177.8,874.5"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 177.8,874.5 0,0 51.5,1.4 0,0 z" points="177.80715,874.53722 229.26186,875.9506 229.26186,875.9506 177.80715,874.53722"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 177.8,892.9 0,0 51.4,0.18577 0,0 z" points="177.80715,892.9 229.26,893.1 229.26,893.1 177.8,892.9"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 177.80715,874.53722 0,18.35077 51.45471,0.18577 0,-17.12316 z" points="177.80715,892.88799 229.26186,893.07376 229.26186,875.9506 177.80715,874.53722"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 177.80715,874.53722 0,0 0,18.35077 0,0 z" points="177.80715,874.53722 177.80715,892.88799 177.80715,892.88799 177.80715,874.53722"/>
+                                                </g>
+                                                <g>
+                                                <path style="fill:#000;stroke-width:0" d="m 182.6,1017.5242 0.25254,0.071 16.41732,-2.6129 -0.25751,-0.067 z" points="182.83761,1017.5949 199.25493,1014.982 198.99742,1014.9146 182.58507,1017.524"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 182.6,927.2382 0,90.286 16.41235,-2.6096 0,-88.35256 z" points="182.58507,1017.5242 198.99742,1014.9146 198.99742,926.56204 182.58507,927.2382"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 199,926.6 0.26,0.0116 0,88.40839 -0.25751,-0.067 z" points="199.25493,926.57361 199.25493,1014.982 198.99742,1014.9146 198.99742,926.56204"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 182.58507,927.2382 0.25254,0.0122 16.41732,-0.67684 -0.25751,-0.0116 z" points="182.83761,927.25045 199.25493,926.57361 198.99742,926.56204 182.58507,927.2382"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 182.83761,927.25045 0,90.3 16.4,-2.6 0,-88.4 z" points="182.83761,1017.5949 199.25493,1014.982 199.25493,926.57361 182.83761,927.25045"/>
+                                                <path style="fill:#000;stroke:none;stroke-width:0" d="m 182.6,927.24 0.25,0.0122 0,90.34445 -0.25254,-0.071 z" points="182.83761,927.25045 182.83761,1017.5949 182.58507,1017.5242 182.58507,927.2382"/>
+                                                <path style="fill:#000;stroke-width:0" d="m 221.7,884.3 a 10.732866,17.551371 0 0 1 -10.57673,17.54951 10.732866,17.551371 0 0 1 -10.88446,-17.0389 10.732866,17.551371 0 0 1 10.26003,-18.04527 10.732866,17.551371 0 0 1 11.18299,16.51386"/>
+                                                <path style="fill:#fff;stroke-width:0" d="m 218.4,884.42432 a 7.1,11.9 0 0 1 -7,11.86803 7.0710678,11.869292 0 0 1 -7.17094,-11.52275 7.0710678,11.869292 0 0 1 6.75958,-12.20327 7.0710678,11.869292 0 0 1 7.3676,11.16771"/>
+                                                </g>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c2 r8">
+                                    <div class="poy">
+                                        <div class="in2 poy gray">
+                                            <svg viewBox="0 0 300 300" height="300" width="300">
+                                            <g transform="matrix(1.25,0,0,-1.25,0,300)">
+                                            <path style="fill:#fff;stroke:none" d="M 120,234.8 C 54.83,234.8 2,182.1 2,117.1 2,65.09 35.81,21 82.7,5.4 c 5.9,-1.08 8.06,2.56 8.06,5.68 0,2.79 -0.1014,10.2 -0.16,20.015 C 57.77,24 50.85,46.88 50.85,46.88 45.48,60.48 37.74,64.1 37.74,64.1 c -10.71,7.3 0.811,7.15 0.811,7.15 11.844,-0.831 18.074,-12.13 18.074,-12.13 10.53,-18 27.62,-12.79 34.34,-9.78 1.072,7.6 4.115,12.79 7.5,15.73 -26.2,2.97 -53.75,13.07 -53.75,58.175 0,12.85 4.6,23.35 12.15,31.58 -1.217,2.977 -5.266,14.94 1.152,31.15 0,0 9.91,3.165 32.45,-12.07 9.41,2.616 19.51,3.916 29.5,3.96 10.02,-0.0432 20.12,-1.344 29.54,-3.96 22.53,15.23 32.42,12.07 32.42,12.07 6.44,-16.21 2.391,-28.17 1.17,-31.15 7.563,-8.23 12.13,-18.74 12.13,-31.58 0,-45.22 -27.59,-55.17 -53.88,-58.08 4.238,-3.635 8.012,-10.82 8.012,-21.8 0,-15.73 -0.145,-28.43 -0.145,-32.285 0,-3.15 2.1225,-6.81 8.11,-5.67 C 204.22,21.02 238,65.1 238,117.1 c 0,65 -52.84,117.71 -118,117.71"/>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon r1">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon r7">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.umsl.edu">
+                                <div class="gon r9">
+                                    <div class="poy">
+                                        <div class="in2 poy maroon">
+                                            <svg viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                            <g>
+                                            <rect mask="url(#dad)" height="300" width="300" y="0" x="0" stroke-width="0" fill="#fff"/>
+                                            <mask id="dad">
+                                                <ellipse fill="#fff" stroke-width="0" ry="80" rx="80" cy="180" cx="150"/>
+                                                <rect fill="#fff" stroke-width="0" x="70" y="70" width="160" height="110"/>
+                                                <ellipse fill="#000" stroke-width="0" ry="55" rx="55" cy="180" cx="150"/>
+                                                <rect fill="#000" stroke-width="0" height="180" width="110" y="0" x="95"/>
+                                                <polygon fill="#fff" stroke-width="0" points="83,40 53,100 83,90 113,100"/>
+                                                <polygon fill="#fff" stroke-width="0" points="218,40 188,100 218,90 248,100"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r2">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r4">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r6">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r8">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c5">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c5 r5">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c5 r7">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bboqs" style="left:2vmin;top:19.5vmin">
+            <div class="hx" onclick="drop(this, set)">
+                <div class="poy">
+                    <div class="in2 poy in2l">
+                        <div class="in3">
+                            <svg viewBox="0 0 300 300" style="visibility:visible;top:69.9vmin;left:3.3vmin" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <g>
+                            <path d="m 40,70 180,90 -180,90 Z" style="fill:#000;stroke-width:0" />
+                            </g>
+                            </svg>
+                            <a href="http://channelawesome.com/">
+                                <div class="gon c1">
+                                    <div class="poy">
+                                        <div class="in2 poy maroon">
+                                            <svg viewBox="0 0 300 300" version="1.1">
+                                            <rect height="300" width="300" y="1" x="0" stroke-width="0" fill="#fff" mask="url(#ca)" id="svg_10"/>
+                                            <mask id="ca">
+                                                <rect style="fill:#000" width="300" height="300" x="0" y="0" />
+                                                <path style="fill:#fff;stroke-width:0;" d="m 177,126 17.6,21 89,-12 -40.5,-42 z"/>
+                                                <path style="fill:#000;stroke-width:0;" d="m 191.8,123.4 12.7,15.1 64.2,-8.5 -29.2,-30.1 z"/>
+                                                <path style="fill:#fff;stroke-width:0;" d="m 64.1,51.7 75.8,-18.3 31.7,79.7 -30.8,9.2 z"/>
+                                                <path style="fill:#000;stroke-width:0;" d="m 89,61 48,-12 20,52 -20,6 z"/>
+                                                <ellipse style="fill:#fff" cx="159.7" cy="167.7" rx="41.9" ry="43"/>
+                                                <path style="fill:#fff;stroke-width:0;" d="M 3.8,160 59,239 156,166.7 141,134.7 Z"/>
+                                                <path style="fill:#000;stroke-width:0;" d="m 27.9,167 37,50 65.2,-46 -10,-20.3 z"/>
+                                                <path style="fill:#fff;stroke-width:0;" d="m 187,168 21,-6.5 91.6,73.3 -84.6,26.6 z"/>
+                                                <path style="fill:#000;stroke-width:0;" d="m 203.2,185.7 13,-4 56.8,45.3 -52.5,16.4 z"/>
+                                                <ellipse style="fill:#000" cx="226.63538" cy="5.4" rx="32.6" ry="16.7" transform="matrix(0.8,0.58,-0.55,0.83,0,0)" />
+                                                <path style="fill:#fff" d="M 260.5,-3.8 A 33.8,35.4 0 0 1 239.6,28.9 33.8,35.4 0 0 1 202.8,21 33.8,35.4 0 0 1 195.5,-17.4 l 31,13.6 z" transform="matrix(0.87,0.5,-0.47,0.88,0,0)" />
+                                                <path style="fill:#fff" d="m 258.82949,-45.5 a 34,23 0 0 1 -33.7,23 34,23 0 0 1 -34,-22.5 34,23 0 0 1 33,-23.5 34,23 0 0 1 35,22" transform="matrix(0.775,0.63,-0.6,0.78,0,0)" />
+                                                <path style="fill:#000" d="m 251,-43.7 a 27,18 0 0 1 -26.7,18 27,18 0 0 1 -27,-18 27,18 0 0 1 26,-18.5 27,18 0 0 1 27.8,17" transform="matrix(0.78,0.6,-0.6,0.8,0,0)" />
+                                                <path style="fill:#fff" d="m 207.5,103.9 a 6.6,6.9 0 0 1 -6.5,6.9 6.6,6.9 0 0 1 -6.7,-6.7 6.6,6.9 0 0 1 6.406,-7 6.6,6.9 0 0 1 6.8,6.6" />
+                                                <path style="fill:#fff;stroke-width:0;" d="m 195.1,100.7 35.5,-39.2 4.6,1.9 -30.6,45.8 z"/>
+                                                <path style="fill:#fff" d="m 240,62.5 a 7,7.8 0 0 1 -7,7.8 7,7.8 0 0 1 -7,-7.6 7,7.8 0 0 1 6.8,-8 7,7.8 0 0 1 7,7.5" />
+                                            </mask>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c1 r5">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c1 r7">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c2 r2">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c2 r4">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c2 r6">
+                                    <div class="poy">
+                                        <div class="in2 poy red">
+                                            <p style="position:absolute;color:#fff;font-size:7vmin;font-family: Arial Black, Gadget, sans-serif;left:39%;top:-43%">C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c2 r8">
+                                    <div class="poy">
+                                        <div class="in2 poy pink">
+                                            <svg version="1.1" viewBox="0 0 300 300">
+                                            <g transform="translate(0,-750)">
+                                            <rect style="fill:#fff" width="300" height="300" x="0" y="750"  mask="url(#ff)"/>
+                                            <mask id="ff">
+                                            <rect style="fill:#000" width="300" height="300" x="0" y="750" />
+                                            <path d="m 45,887 39,145 127.5,0.36 5.34,0 35,-148.2 z" style="fill:#000;stroke:#fff;stroke-width:10;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"/>
+                                            <path d="m 141.66,832.39 c 0,0 -27.51,-19.43 -25.75,-28.02 1.77,-8.59 8.83,-32.19 33.08,-32.58 23,-0.37 33.38,18.62 35.86,32.07 6.35,34.47 -43.2,28.53 -43.2,28.53 z" style="fill:#000;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                                            <path
+                                                id="path4171"
+                                                d="m 53.93,875.93 10,41.07 172.5,-2.86 10,-39.64 -192.14,0 z"
+                                                style="fill:#000;stroke-width:0"/>
+                                            <path
+                                                id="path4161"
+                                                d="m 36.701414,883.54734 c 0,0 7.225578,-81.24841 108.441446,-80.32804 103.054,0.93708 114.7553,66.51872 114.36493,84.97462 -0.1123,5.30943 -3.42349,12.47871 -12.41334,12.2549 -14.65208,-0.36477 -7.9091,-13.86731 -15.28843,-14.22444 -8.56142,-0.41434 -0.91365,15.45153 -16.68483,15.48342 -16.3611,0.0331 -11.39614,-16.0536 -16.76405,-16.28436 -5.02818,-0.21616 -3.57587,13.89596 -15.71428,14.22443 C 169.4452,900.00501 170.85714,885.7193 165.5,885.7193 c -5.35714,0 -1.43761,16.2263 -15,15.35715 -15.08666,-0.96683 -10.51906,-14.98933 -16.78571,-15 -5.98842,-0.0102 -2.81364,14.58405 -17.29451,14.53825 -15.17945,-0.048 -12.41268,-15.03475 -16.99121,-15.25254 -5.22144,-0.24837 -0.5027,14.57784 -12.857141,15 -15.774707,0.53903 -11.725808,-16.33877 -17.5,-16.42857 -5.57862,-0.0868 0.589093,15.99505 -19.123551,15.33547 -14.558971,-0.48714 -13.246464,-15.72172 -13.246464,-15.72172 z"
+                                                style="fill:#fff;stroke-width:0"/>
+                                            </mask>
+                                            </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon r1">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon r7">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon r9">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r2">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r4">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r6">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c4 r8">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c5">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c5 r5">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="gon c5 r7">
+                                    <div class="poy">
+                                        <div class="in2 poy">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
