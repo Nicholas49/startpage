@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chewyfix</title>
+        <style>
+            body {
+                background-color: aqua;
+            }
+            div {
+                width: 80vmin;
+                height: 80vmin;
+                background-color: aqua;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <script>
+            function set() {
+                var a;
+            }
+            function chewy (){
+                var rand = Math.floor(Math.random() * 6);
+                while (rand === set.a) {
+                    var rand = Math.floor(Math.random() * 6);
+                }
+                set.a = rand;
+                var pic;
+                switch (rand) {
+                    case 0:
+                        pic = "ch1";
+                        break;
+                    case 1:
+                        pic = "ch2";
+                        break;
+                    case 2:
+                        pic = "ch3";
+                        break;
+                    case 3:
+                        pic = "ch4";
+                        break;
+                    case 4:
+                        pic = "ch5";
+                        break;
+                    case 5:
+                        pic = "ch6";
+                        break;
+                }
+                document.getElementById("frame").innerHTML= "<img src='"+pic+".jpg' width='100%'>";
+            }
+        </script>
+    </head>
+    <body onload="chewy()">
+        <div id="frame" onclick="chewy()"></div>
+    </body>
+</html>
