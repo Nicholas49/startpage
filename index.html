@@ -7,6 +7,7 @@
         background-color:#000;
         margin: 0%;
         overflow: hidden;
+		padding: 0%;
     }
     .bq {
         position:absolute;
@@ -16,8 +17,15 @@
         height:20vmin;
         transform: rotate(120deg);
         z-index:0;
+		transition: top 0.5s;
     }
-    .hx {
+	#heqsentr {
+	position:absolute;
+	left:50%;
+	top:0%;
+	transition: top 0.2s;
+    }
+	.hx {
         visibility: hidden;
         position:relative;
         overflow: hidden;
@@ -185,16 +193,15 @@
     }
     #wrapper {
         position: absolute;
-        left: 15%;
-        right: 15%;
-        top: 3%;
-
+        left: 0%;
+        right: 0%;
+        top: 3vmin;
     }
     #input-box {
-        font-size: 30px;
-        font-family: 'Roboto Slab', serif;
+        font-size: 2vmin;
+        font-family: 'century gothic', serif;
         border: 0px;
-        border-bottom: 1px solid white;
+        border-bottom: 0.1vmin solid white;
         outline: none;
         background: transparent;
         max-width: 100%;
@@ -205,17 +212,8 @@
         background: #00f;
     }
     #content {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'century gothic';
         color:#fff;
-    }
-    .menuBtn {
-        text-align: center;
-        font-size: 16px;
-        border: 1px solid black;
-        background-color: #FFF;
-    }
-    .menuBtn:focus {
-        outline: none;
     }
     .resetBtn {
         text-align: center;
@@ -246,19 +244,19 @@
         background-color: #A1C0C0;
     }
     table {
-        width: 50%;
+        width: 30%;
         border-collapse: collapse;
         min-width: 500px;
-        border: 1px solid #fff;
-        font-size: 16px;
+        border: 0.5vmin solid #fff;
+        font-size: 1.5vmin;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
     td {
-        padding: 1px;
-        border: 1px solid;
-        margin-bottom: 0px;
+        padding: 0.5vmin;
+        border: 0.5vmin solid;
+        margin-bottom: 0%;
     }
     #message {
         font-family: 'Roboto', sans-serif;
@@ -290,10 +288,9 @@
         <div id='input' align=center>
             <input id='input-box' type='text' onkeypress='return verifyKey(event)' autocomplete='off' spellcheck='false' autofocus>
         </div>
-        <div id='message'></div>
         <div id='content'></div>
     </div>
-    <div class="hhhhh" id="iiiii" style="position:absolute;left:50%;top:0%;margin:0 auto;width:5px;height:5px">
+    <div id="heqsentr">
         <div class="bq" style="top:70.5vmin">
             <div class="hx" onclick="drop(this, set)">
                 <div class="py" style="z-index:0">
@@ -1155,14 +1152,14 @@
         inputBox.select();
         var input = inputBox.value.trim();
         if (input === '') {
-            lowerWrapper();
+            raiseheqs();
             return;
         }
         if (input === 'help' || input === '?') {
             displayHelpMenu();
             return;
         }
-        var inputArr = input.split(';');
+        var inputArr = input.split(',');
         var newtab = (inputArr[inputArr.length - 1] === 'n');
         var command;
         var query;
@@ -1294,78 +1291,72 @@
         clearContent();
         document.getElementById('content').innerHTML = content;
     }
-    function raiseWrapper() {
-        document.getElementById('wrapper').style.top = "3%";
+    function raiseheqs() {
+		var thor = document.getElementsByClassName("bq");
+		for (i = 1; i < thor.length; i++) {
+			thor[i].style.top = "60vmin";
+		}
     }
-    function lowerWrapper() {
-        document.getElementById('wrapper').style.top = "3%";
-    }
+    function lowerheqs() {
+		var loki = document.getElementsByClassName("bq");
+		for (i = 1; i < loki.length; i++) {
+			loki[i].style.top = "81vmin";
+		}
+	}
     function displayHelpMenu() {
         var html = " \
-      <table border='1'> \
+      <table> \
         <tr> \
           <th>Command</th> \
           <th>Site/Function</th> \
-        </tr> \
-        <tr> \
-          <td class='menuCommandText'>options</td> \
-          <td>Show options menu</td> \
         </tr> \
         <tr> \
           <td class='menuCommandText'>help</td> \
           <td>Show this menu</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>r (;&ltsubreddit&gt)</td> \
+          <td class='menuCommandText'>r,x</td> \
           <td>Reddit</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>g (;&ltquery&gt)</td> \
+          <td class='menuCommandText'>g,x</td> \
           <td>Google</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>y (;&ltquery&gt)</td> \
+          <td class='menuCommandText'>y,x</td> \
           <td>YouTube</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>a (;&ltquery&gt)</td> \
+          <td class='menuCommandText'>a,x</td> \
           <td>Amazon</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>w (;&ltquery&gt)</td> \
+          <td class='menuCommandText'>w,x</td> \
           <td>Wikipedia</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>imdb (;&ltquery&gt)</td> \
+          <td class='menuCommandText'>imdb,x</td> \
           <td>Internet Movie Database</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>img (;&ltquery&gt)</td> \
-          <td>Google Images</td> \
-        </tr> \
-        <tr> \
-          <td class='menuCommandText'>wa (;&ltquery&gt)</td> \
+          <td class='menuCommandText'>wa,x</td> \
           <td>Wolfram Alpha</td> \
         </tr> \
         <tr> \
-          <td class='menuCommandText'>t;&lturl&gt</td> \
-          <td>Open url in current tab</td> \
+          <td class='menuCommandText'>t,x</td> \
+          <td>Go to url</td> \
         </tr> \
         <tr> \
-        <td class='menuCommandText'>&ltanything&gt&#59n</td> \
+        <td class='menuCommandText'>x,n</td> \
           <td>Open in a new tab</td> \
         </tr> \
-        <tr> \
-          <td colspan='2'> \
-            <button type='button' id='closeHelpBtn' class='menuBtn'>Close</button> \
-          </td> \
+		<tr> \
+        <td class='menuCommandText'>c,x</td> \
+          <td>Change Background Color</td> \
         </tr> \
       </table>"
         displayContent(html);
-        document.getElementById('closeHelpBtn').onclick = function () {
-            clearContent();
-            clearInput();
-        }
+		lowerheqs();
     }
 </script>
 </body>
