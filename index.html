@@ -11,13 +11,13 @@
     }
     .bq {
         position:absolute;
-        left:8vmin;
+        left:7vmin;
         top:60vmin;
         width:90vmin;
         height:20vmin;
         transform: rotate(120deg);
         z-index:0;
-		transition: top 0.5s;
+        transition: transform 0.5s;
     }
 	#heqsentr {
 	position:absolute;
@@ -52,7 +52,7 @@
         transition-timing-function: linear;
     }
     .in:hover{
-        transition: background-color 0.3s;
+        transition: background-color 0s;
     }
     .inl {
         background-color:#666;
@@ -546,7 +546,7 @@
                 </div>
             </div>
         </div>
-        <div class="bq" style="left:14vmin">
+        <div class="bq" style="left:13vmin;transform: rotate(120deg) translate(0vmin, 0vmin)">
             <div class="hx" onclick="drop(this, set)">
                 <div class="py">
                     <div class="in py inl">
@@ -779,7 +779,7 @@
                 </div>
             </div>
         </div>
-        <div class="bq" style="left:2vmin">
+        <div class="bq" style="left:1vmin">
             <div class="hx" onclick="drop(this, set)">
                 <div class="py">
                     <div class="in py inl">
@@ -1294,13 +1294,13 @@
     function raiseheqs() {
 		var thor = document.getElementsByClassName("bq");
 		for (i = 1; i < thor.length; i++) {
-			thor[i].style.top = "60vmin";
+			thor[i].style.transform = "rotate(120deg) translate(0vmin, 0vmin)";
 		}
     }
     function lowerheqs() {
 		var loki = document.getElementsByClassName("bq");
 		for (i = 1; i < loki.length; i++) {
-			loki[i].style.top = "81vmin";
+			loki[i].style.transform = "rotate(120deg) translate(18.2vmin, -10.5vmin)";
 		}
 	}
     function displayHelpMenu() {
