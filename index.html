@@ -4,10 +4,11 @@
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 <style>
     body {
-        background-color:#000;
+		background-color:#000;
         margin: 0%;
         overflow: hidden;
 		padding: 0%;
+		transition: background-color 0.5s;
     }
     .bq {
         position:absolute;
@@ -198,18 +199,18 @@
         top: 3vmin;
     }
     #input-box {
-        font-size: 2vmin;
+        font-size: 5vmin;
         font-family: 'century gothic', serif;
         border: 0px;
-        border-bottom: 0.1vmin solid white;
+        border-bottom: 0.3vmin solid #666;
         outline: none;
         background: transparent;
         max-width: 100%;
-        color: #fff;
+        color: #666;
         text-align:center;
     }
     #input-box::selection {
-        background: #00f;
+        background: #fff;
     }
     #content {
         font-family: 'century gothic';
@@ -255,7 +256,7 @@
     }
     td {
         padding: 0.5vmin;
-        border: 0.5vmin solid;
+        border: 0.2vmin solid;
         margin-bottom: 0%;
     }
     #message {
@@ -264,10 +265,7 @@
         text-align: center;
         padding-top: 25px;
     }
-    #bgColorInput {
-        border: none;
-        background-color: #FFF;
-    }
+
 </style>
 <script>
     var commands = [
@@ -279,7 +277,8 @@
         {command: 'wa', url: 'https://www.wolframalpha.com', search: '/input/?i='},
         {command: 'imdb', url: 'https://www.imdb.com', search: '/find?s=all&q='},
         {command: 'img', url: 'https://www.google.com', search: '/search?tbm=isch&q='},
-        {command: 't', url: '', search: ''}
+        {command: 't', url: '', search: ''},
+		{command: 'c', url: '', search: ''}
     ];
 </script>
 </head>
@@ -1169,6 +1168,7 @@
             validCommand = true;
         }
         if (validCommand) {
+			isearch = true;
             switch (inputArr.length) {
                 case 1:
                     redirect(command.url, newtab);
@@ -1176,20 +1176,45 @@
                     break;
                 case 2:
                     query = queryFix(command, inputArr[1]);
-                    if (inputArr[1] === 'n') {
-                        redirect(command.url, newtab);
-                        return false;
-                    } else {
-                        redirect(command.url + command.search + query, newtab);
-                        return false;
-                    }
+					if (inputArr[0] === 'c'){
+						if (typeof (Storage) === "undefined") {
+							alert("Browser does not support local storage: your settings won't be saved (sorry)");
+						} else {
+							// Background color
+							var color = inputArr[1];
+							if (!color.startsWith('#')) {
+								color = '#' + color;
+							}
+							if (/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(color)) { // check if valid hex value
+								SETTINGS.color = color;
+								setColor(color);
+								localStorage.setItem('userOptions', JSON.stringify(SETTINGS));
+							} else {
+								clearInput();
+								alert('not a valid hex value');
+								return false;
+							}
+						}
+						clearInput();
+						isearch = false;
+					} else {
+						if (inputArr[1] === 'n') {
+							redirect(command.url, newtab);
+							return false;
+						} else {
+							redirect(command.url + command.search + query, newtab);
+							return false;
+						}
+					}
                     break;
                 default:
                     query = queryFix(command, inputArr[1]);
                     redirect(command.url + command.search + query, newtab);
                     return false;
             }
-            redirect(command.url + command.search + query, newtab);
+			if (isearch === true){
+				redirect(command.url + command.search + query, newtab);
+			}
             return false;
         } else {
             command = SETTINGS.defaultCommand;
@@ -1225,7 +1250,7 @@
                 setColor(color);
                 localStorage.setItem('userOptions', JSON.stringify(SETTINGS));
             } else {
-                alert('not a valid hex value\n(valid example: #A1C0C0)');
+                alert('not a valid hex value');
                 return false;
             }
             // Get default command
@@ -1307,7 +1332,7 @@
         var html = " \
       <table> \
         <tr> \
-          <th>Command</th> \
+          <th>Command (x = user input)</th> \
           <th>Site/Function</th> \
         </tr> \
         <tr> \
