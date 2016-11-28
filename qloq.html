@@ -10,7 +10,7 @@ color:#0ff;}
 </style><script>
 function k(){
 var d = new Date();
-document.getElementById("cl").innerHTML = q(d.getHours()) + ":" + q(d.getMinutes()) + ":" + q(d.getSeconds());
+document.getElementById("c").innerHTML = q(d.getHours()) + ":" + q(d.getMinutes()) + ":" + q(d.getSeconds());
 var t = setTimeout(k, 10);}
 function q(t){
 var t2 = Math.round((t / 12) - 0.5);
@@ -20,4 +20,4 @@ t3 = "X";}
 if(t3 === 11){
 t3 = "E";}
 return "" + t2 + t3;}
-</script></head><body onload="kh()"><p id="cl"></p></body></html>
+</script></head><body onload="k()"><p id="c"></p></body></html>
