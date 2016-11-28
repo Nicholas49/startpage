@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html><head>
-<title>DUZENL QLOQ</title>
-<style>
-body{
-background-color:#000;
-}
-p{
-position: absolute;
+<!DOCTYPE html><html><head><title>DUZENL QLOQ</title><style>
+body{background-color:#000;}
+p{position: absolute;
 font-size: 20vmin;
 font-family: monospace, sans-serif;
 left: 50%;
 top: 15vmin;
 transform: translate(-50%,0);
-color:#0ff;
-}
-</style>
-<script>
-function kh(){
+color:#0ff;}
+</style><script>
+function k(){
 var d = new Date();
-document.getElementById("cl").innerHTML = kon(d.getHours()) + ":" + kon(d.getMinutes()) + ":" + kon(d.getSeconds());
-var t = setTimeout(kh, 10);}
-function kon(t){
+document.getElementById("cl").innerHTML = q(d.getHours()) + ":" + q(d.getMinutes()) + ":" + q(d.getSeconds());
+var t = setTimeout(k, 10);}
+function q(t){
 var t2 = Math.round((t / 12) - 0.5);
 var t3 = t % 12;
 if(t3 === 10){
