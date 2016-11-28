@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DUZENL QLOQ</title>
+<style>
+p{
+position: absolute;
+font-size: 20vmin;
+font-family: sans-serif;
+left: 50%;
+top: 15vmin;
+transform: translate(-50%,0);
+}
+</style>
+<script>
+function kh(){
+var d = new Date();
+                document.getElementById("cl").innerHTML = kon(d.getHours()) + ":" + kon(d.getMinutes()) + ":" + kon(d.getSeconds());
+                var t = setTimeout(kh, 10);
+            }
+            function kon(t){
+                var t2 = Math.round((t / 12) - 0.5);
+                var t3 = t % 12;
+                if(t3 === 10){
+                    t3 = "X";
+                }
+                if(t3 === 11){
+                    t3 = "&#400";
+                }
+                return "" + t2 + t3;
+            }
+        </script>
+    </head>
+    <body onload="kh()">
+        <p id="cl"></p>
+    </body>
+</html>
