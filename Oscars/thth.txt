@@ -3,7 +3,7 @@
     "Angela": {   "BP":"Arrival",       "Director":"Steve"},
     "Bob": {	  "BP":"Arrival",       "Director":"Casey Affleck"},
     "Chris": {    "BP":"Manchester",    "Director":"Trent"},
-    "Courtney": { "BP":"Arrival",       "Director":"Lucy"},
+    "Courtney": { "BP":"Moonlight",       "Director":"Lucy"},
     "Josh": {	  "BP":"Moonlight",     "Director":"Casey Affleck"},
     "Kieth": {    "BP":"Hidden Fences", "Director":"Trent"},
     "Monica": {   "BP":"Lalaland",      "Director":"Casey Affleck"},
