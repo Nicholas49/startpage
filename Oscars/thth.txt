@@ -12,7 +12,7 @@
 	"Docmntry":"r",
 	"Doc_Shrt":"r",
 	"Flm_Edit":"r",
-	"Frn_Lang":"Lalalan",
+	"Frn_Lang":"Lalalamb",
 	"Mkp_Hair":"r",
 	"Ms_Score":"r",
 	"Mus_Song":"r",
