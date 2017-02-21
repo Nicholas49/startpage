@@ -12,9 +12,13 @@
             }
             .bk{
                 background-color:#008;
+                margin:auto;
             }
             table{
                 border:solid #fff;
+                border-collapse: collapse;
+                margin:auto;
+                font-size:2vmin;
             }
             th{
                 border:solid #fff;
@@ -24,11 +28,18 @@
                 border:solid #fff;
                 color:#fff;
             }
+            .ce{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+                color:#fc0;
+                font-size: 5vmin;
+            }
         </style>
     </head>
     <body>
         <h2>Oscar Graph</h2>
-        <p>doot doot doot</p>
         <p id="demo"></p>
         <script>
             var xmlhttp = new XMLHttpRequest();
@@ -39,60 +50,129 @@
                 }
                 return county;
             }
-            
             xmlhttp.onreadystatechange = function() {
                 if (this.readyState === 4 && this.status === 200) {
                     m = JSON.parse(this.responseText);
                     var ndx = [
-                        ["Winner",      "Best Picture", "Lead Actor",    "Lead Actress",     "Supporting Actor", "Supporting Actress", "Animated Film", "Cinematography", "Costume Design", "Directing", "Documentary", "Short Documentary", "Film Editing", "Foreign Language Film", "Makeup and Hairstyling", "Music", "Original Song", "Production Design", "Animated Short", "Short", "Sound Editing", "Sound Mixing", "Visual Effects", "Adapted Screenplay", "Original Screenplay"],
-                        ["Angela",   m.Angela.BP,   m.Angela.Director,   "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Bob",      m.Bob.BP,      m.Bob.Director,      "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Chris",    m.Chris.BP,    m.Chris.Director,    "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Courtney", m.Courtney.BP, m.Courtney.Director, "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Josh",     m.Josh.BP,     m.Josh.Director,     "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Kieth",    m.Kieth.BP,    m.Kieth.Director,    "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Monica",   m.Monica.BP,   m.Monica.Director,   "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Nicholas", m.Nicholas.BP, m.Nicholas.Director, "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Theresa",  m.Theresa.BP,  m.Theresa.Director,  "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Tina",     m.Tina.BP,     m.Tina.Director,     "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Tom",      m.Tom.BP,      m.Tom.Director,      "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"],
-                        ["Steve",    m.Steve.BP,    m.Steve.Director,    "Isabelle Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"]
+                        ["Category",   "Best Picture",  "Lead Actor",    "Lead Actress","Supporting Actor","Supporting Actress","Animated Film","Cinematography","Costume Design","Directing","Documentary","Documentary Short",     "Film Editing",  "Foreign Lang",  "Mkp and Hair",  "Music",         "Original Song", "Prod Design",   "An Short",      "Short",         "Sound Editing", "Sound Mixing",  "Visual FX",     "Adapted Scrn",  "Original Screenplay"],
+                        ["Angela",   m.Ange.Best_Pic, m.Ange.Ld_Actor, m.Ange.Ld_Actrs, m.Ange.Sp_Actor, m.Ange.Sp_Actrs, m.Ange.Animated, m.Ange.Cnmtgrph, m.Ange.Cost_Des, m.Ange.Directin, m.Ange.Docmntry, m.Ange.Doc_Shrt, m.Ange.Flm_Edit, m.Ange.Frn_Lang, m.Ange.Mkp_Hair, m.Ange.Ms_Score, m.Ange.Mus_Song, m.Ange.Prod_Dsn, m.Ange.An_Short, m.Ange.Lv_Short, m.Ange.Snd_Edit, m.Ange.Snd_Mixn, m.Ange.Visul_FX, m.Ange.Adapt_SP, m.Ange.Orgnl_SP],
+                        ["Bob",      m.BobF.Best_Pic, m.BobF.Ld_Actor, m.BobF.Ld_Actrs, m.BobF.Sp_Actor, m.BobF.Sp_Actrs, m.BobF.Animated, m.BobF.Cnmtgrph, m.BobF.Cost_Des, m.BobF.Directin, m.BobF.Docmntry, m.BobF.Doc_Shrt, m.BobF.Flm_Edit, m.BobF.Frn_Lang, m.BobF.Mkp_Hair, m.BobF.Ms_Score, m.BobF.Mus_Song, m.BobF.Prod_Dsn, m.BobF.An_Short, m.BobF.Lv_Short, m.BobF.Snd_Edit, m.BobF.Snd_Mixn, m.BobF.Visul_FX, m.BobF.Adapt_SP, m.BobF.Orgnl_SP],
+                        ["Chris",    m.Chri.Best_Pic, m.Chri.Ld_Actor, m.Chri.Ld_Actrs, m.Chri.Sp_Actor, m.Chri.Sp_Actrs, m.Chri.Animated, m.Chri.Cnmtgrph, m.Chri.Cost_Des, m.Chri.Directin, m.Chri.Docmntry, m.Chri.Doc_Shrt, m.Chri.Flm_Edit, m.Chri.Frn_Lang, m.Chri.Mkp_Hair, m.Chri.Ms_Score, m.Chri.Mus_Song, m.Chri.Prod_Dsn, m.Chri.An_Short, m.Chri.Lv_Short, m.Chri.Snd_Edit, m.Chri.Snd_Mixn, m.Chri.Visul_FX, m.Chri.Adapt_SP, m.Chri.Orgnl_SP],
+                        ["Courtney", m.Cour.Best_Pic, m.Cour.Ld_Actor, m.Cour.Ld_Actrs, m.Cour.Sp_Actor, m.Cour.Sp_Actrs, m.Cour.Animated, m.Cour.Cnmtgrph, m.Cour.Cost_Des, m.Cour.Directin, m.Cour.Docmntry, m.Cour.Doc_Shrt, m.Cour.Flm_Edit, m.Cour.Frn_Lang, m.Cour.Mkp_Hair, m.Cour.Ms_Score, m.Cour.Mus_Song, m.Cour.Prod_Dsn, m.Cour.An_Short, m.Cour.Lv_Short, m.Cour.Snd_Edit, m.Cour.Snd_Mixn, m.Cour.Visul_FX, m.Cour.Adapt_SP, m.Cour.Orgnl_SP],
+                        ["Josh",     m.Josh.Best_Pic, m.Josh.Ld_Actor, m.Josh.Ld_Actrs, m.Josh.Sp_Actor, m.Josh.Sp_Actrs, m.Josh.Animated, m.Josh.Cnmtgrph, m.Josh.Cost_Des, m.Josh.Directin, m.Josh.Docmntry, m.Josh.Doc_Shrt, m.Josh.Flm_Edit, m.Josh.Frn_Lang, m.Josh.Mkp_Hair, m.Josh.Ms_Score, m.Josh.Mus_Song, m.Josh.Prod_Dsn, m.Josh.An_Short, m.Josh.Lv_Short, m.Josh.Snd_Edit, m.Josh.Snd_Mixn, m.Josh.Visul_FX, m.Josh.Adapt_SP, m.Josh.Orgnl_SP],
+                        ["Kieth",    m.Kths.Best_Pic, m.Kths.Ld_Actor, m.Kths.Ld_Actrs, m.Kths.Sp_Actor, m.Kths.Sp_Actrs, m.Kths.Animated, m.Kths.Cnmtgrph, m.Kths.Cost_Des, m.Kths.Directin, m.Kths.Docmntry, m.Kths.Doc_Shrt, m.Kths.Flm_Edit, m.Kths.Frn_Lang, m.Kths.Mkp_Hair, m.Kths.Ms_Score, m.Kths.Mus_Song, m.Kths.Prod_Dsn, m.Kths.An_Short, m.Kths.Lv_Short, m.Kths.Snd_Edit, m.Kths.Snd_Mixn, m.Kths.Visul_FX, m.Kths.Adapt_SP, m.Kths.Orgnl_SP],
+                        ["Monica",   m.Moni.Best_Pic, m.Moni.Ld_Actor, m.Moni.Ld_Actrs, m.Moni.Sp_Actor, m.Moni.Sp_Actrs, m.Moni.Animated, m.Moni.Cnmtgrph, m.Moni.Cost_Des, m.Moni.Directin, m.Moni.Docmntry, m.Moni.Doc_Shrt, m.Moni.Flm_Edit, m.Moni.Frn_Lang, m.Moni.Mkp_Hair, m.Moni.Ms_Score, m.Moni.Mus_Song, m.Moni.Prod_Dsn, m.Moni.An_Short, m.Moni.Lv_Short, m.Moni.Snd_Edit, m.Moni.Snd_Mixn, m.Moni.Visul_FX, m.Moni.Adapt_SP, m.Moni.Orgnl_SP],
+                        ["Nicholas", m.Nich.Best_Pic, m.Nich.Ld_Actor, m.Nich.Ld_Actrs, m.Nich.Sp_Actor, m.Nich.Sp_Actrs, m.Nich.Animated, m.Nich.Cnmtgrph, m.Nich.Cost_Des, m.Nich.Directin, m.Nich.Docmntry, m.Nich.Doc_Shrt, m.Nich.Flm_Edit, m.Nich.Frn_Lang, m.Nich.Mkp_Hair, m.Nich.Ms_Score, m.Nich.Mus_Song, m.Nich.Prod_Dsn, m.Nich.An_Short, m.Nich.Lv_Short, m.Nich.Snd_Edit, m.Nich.Snd_Mixn, m.Nich.Visul_FX, m.Nich.Adapt_SP, m.Nich.Orgnl_SP],
+                        ["Theresa",  m.Ther.Best_Pic, m.Ther.Ld_Actor, m.Ther.Ld_Actrs, m.Ther.Sp_Actor, m.Ther.Sp_Actrs, m.Ther.Animated, m.Ther.Cnmtgrph, m.Ther.Cost_Des, m.Ther.Directin, m.Ther.Docmntry, m.Ther.Doc_Shrt, m.Ther.Flm_Edit, m.Ther.Frn_Lang, m.Ther.Mkp_Hair, m.Ther.Ms_Score, m.Ther.Mus_Song, m.Ther.Prod_Dsn, m.Ther.An_Short, m.Ther.Lv_Short, m.Ther.Snd_Edit, m.Ther.Snd_Mixn, m.Ther.Visul_FX, m.Ther.Adapt_SP, m.Ther.Orgnl_SP],
+                        ["Tina",     m.Tina.Best_Pic, m.Tina.Ld_Actor, m.Tina.Ld_Actrs, m.Tina.Sp_Actor, m.Tina.Sp_Actrs, m.Tina.Animated, m.Tina.Cnmtgrph, m.Tina.Cost_Des, m.Tina.Directin, m.Tina.Docmntry, m.Tina.Doc_Shrt, m.Tina.Flm_Edit, m.Tina.Frn_Lang, m.Tina.Mkp_Hair, m.Tina.Ms_Score, m.Tina.Mus_Song, m.Tina.Prod_Dsn, m.Tina.An_Short, m.Tina.Lv_Short, m.Tina.Snd_Edit, m.Tina.Snd_Mixn, m.Tina.Visul_FX, m.Tina.Adapt_SP, m.Tina.Orgnl_SP],
+                        ["Tom",      m.TomL.Best_Pic, m.TomL.Ld_Actor, m.TomL.Ld_Actrs, m.TomL.Sp_Actor, m.TomL.Sp_Actrs, m.TomL.Animated, m.TomL.Cnmtgrph, m.TomL.Cost_Des, m.TomL.Directin, m.TomL.Docmntry, m.TomL.Doc_Shrt, m.TomL.Flm_Edit, m.TomL.Frn_Lang, m.TomL.Mkp_Hair, m.TomL.Ms_Score, m.TomL.Mus_Song, m.TomL.Prod_Dsn, m.TomL.An_Short, m.TomL.Lv_Short, m.TomL.Snd_Edit, m.TomL.Snd_Mixn, m.TomL.Visul_FX, m.TomL.Adapt_SP, m.TomL.Orgnl_SP],
+                        ["Steve",    m.Stev.Best_Pic, m.Stev.Ld_Actor, m.Stev.Ld_Actrs, m.Stev.Sp_Actor, m.Stev.Sp_Actrs, m.Stev.Animated, m.Stev.Cnmtgrph, m.Stev.Cost_Des, m.Stev.Directin, m.Stev.Docmntry, m.Stev.Doc_Shrt, m.Stev.Flm_Edit, m.Stev.Frn_Lang, m.Stev.Mkp_Hair, m.Stev.Ms_Score, m.Stev.Mus_Song, m.Stev.Prod_Dsn, m.Stev.An_Short, m.Stev.Lv_Short, m.Stev.Snd_Edit, m.Stev.Snd_Mixn, m.Stev.Visul_FX, m.Stev.Adapt_SP, m.Stev.Orgnl_SP]
                     ];
                     
-                    var wynrz = ["X", m.Winner.BP, m.Winner.Director, "Isabele Huppert", "Mahershala Ali",   "Viola Davis", "Kubo and the Two Strings", "Arrival", "Allied", "Arrival", "Fire at Sea", "Extremis", "Arrival", "Land of Mine", "A Man Called Ove", "Jackie", "Audition", "Arrival", "Blind Vaysha", "Ennemis Interieurs", "Arrival", "Arrival", "Deepwater Horizon", "Arrival", "Hell or High Water"];
+                    var wynrz = ["Winner", m.Winner.Best_Pic, m.Winner.Ld_Actor, m.Winner.Ld_Actrs, m.Winner.Sp_Actor, m.Winner.Sp_Actrs, m.Winner.Animated, m.Winner.Cnmtgrph, m.Winner.Cost_Des, m.Winner.Directin, m.Winner.Docmntry, m.Winner.Doc_Shrt, m.Winner.Flm_Edit, m.Winner.Frn_Lang, m.Winner.Mkp_Hair, m.Winner.Ms_Score, m.Winner.Mus_Song, m.Winner.Prod_Dsn, m.Winner.An_Short, m.Winner.Lv_Short, m.Winner.Snd_Edit, m.Winner.Snd_Mixn, m.Winner.Visul_FX, m.Winner.Adapt_SP, m.Winner.Orgnl_SP];
+                    var val = ["X",         3,                   3,                 3,                  2,                 2,                 1,                1,                  1,                 2,               1,                  1,               1,                   1,                  1,                 1,                1,                 1,                  1,                 1,                 1,                  1,                1,                 1,                1  ];
+                    
                         
-                    var scor = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                    var scor = [
+                        ["Player",0],
+                        ["Angela", 0],
+                        ["Bob", 0],
+                        ["Chris", 0],
+                        ["Courtney", 0],
+                        ["Josh", 0],
+                        ["Kieth", 0],
+                        ["Monica", 0],
+                        ["Nicholas", 0],
+                        ["Theresa", 0],
+                        ["Tina", 0],
+                        ["Tom", 0],
+                        ["Steve", 0]
+                    ];
+                    
                     var c = 1;
                     var d = 1;
                     var contents = "";
-                    while(c < 11){
-                        while(d < 11){
+                    while(c < 13){
+                        while(d < 25){
                             if(ndx[c][d] === wynrz[d]){
-                                scor[c] += 1;
+                                scor[c][1] += val[d];
                             }
                             d++;
                         }
-                        contents += "<div class='st bk' style='width:" + (scor[c] * 8) + "%'>" + ndx[c][0] + "</div><br>";
                         c++;
                         d = 1;
                     }
                     
-                    contents += "<table>\
-                            <tr><td>" + ndx[0][0] + "</td><td>" + m.Winner.BP + "</td><td>" + m.Winner.Director + "</td></tr>\
-                            <tr><td>" + ndx[1][0] + "</td><td>" + m.Bob.BP + "</td><td>" + m.Bob.Director + "</td></tr>\
-                            <tr><td>" + ndx[2][0] + "</td><td>" + m.Chris.BP + "</td><td>" + m.Chris.Director + "</td></tr>\
-                            <tr><td>" + ndx[3][0] + "</td><td>" + m.Courtney.BP + "</td><td>" + m.Courtney.Director + "</td></tr>\
-                            <tr><td>" + ndx[4][0] + "</td><td>" + m.Josh.BP + "</td><td>" + m.Josh.Director + "</td></tr>\
-                            <tr><td>" + ndx[5][0] + "</td><td>" + m.Kieth.BP + "</td><td>" + m.Kieth.Director + "</td></tr>\
-                            <tr><td>" + ndx[6][0] + "</td><td>" + m.Monica.BP + "</td><td>" + m.Monica.Director + "</td></tr>\
-                            <tr><td>" + ndx[7][0] + "</td><td>" + m.Nicholas.BP + "</td><td>" + m.Nicholas.Director + "</td></tr>\
-                            </table>";
+                    c = 1;
+                    d = 0;
+                    var g = 1;
+                    var holdar = ["blah", 0];
+                    while(d === 0){
+                        d = 1;
+                        while(c < 12){
+                            if(scor[c][1] < scor[c + 1][1]){
+                                
+                                holdar[0] = scor[c][0]; 
+                                holdar[1] = scor[c][1];
+                                
+                                scor[c][0] = scor[c + 1][0];
+                                scor[c][1] = scor[c + 1][1];
+                                
+                                scor[c + 1][0] = holdar[0];
+                                scor[c + 1][1] = holdar[1];
+                                
+                                d = 0;
+                                g++;
+                            }
+                            c++;
+                        }
+                        c = 1;
+                    }
+                    
+
+                    while(c < 13){
+                        contents += "<div class='st bk' style='width:" + (scor[c][1] * 3) + "%'><p class='ce'>" + scor[c][0] + ": " + scor[c][1] + "</p></div>";
+                        c++;
+                    }
+                    
+                    c = 1;
+                    var xcolor = "";
+                    contents += "<table>";
+                    contents += "<tr><td>Category</td><td>Winner</td>";
+                    while(c < 13){
+                        contents += "<td>" + ndx[c][0] + "</td>";
+                        c++;
+                    }
+                    contents += "</tr>";
+                    c = 1;
+                    while(c < 25){
+                        contents += "<tr><td>" + ndx[0][c] + "</td><td>" + wynrz[c] + "</td>";
+                        
+                        d = 1;
+                        while(d < 13){
+                            if(ndx[d][c] === "na"){
+                                xcolor = "#000";
+                            }
+                            else if(ndx[d][c] === wynrz[c]){
+                                xcolor = "#08f";
+                                }
+                                else{
+                                    xcolor = "#f20";
+                                }
+                            contents += "<td style='background-color:" + xcolor + "'>" + ndx[d][c] + "</td>";
+                            d++;
+                        }
+                        contents += "</tr>";
+                        c++;
+                    }
+                    contents += "</table>";
                     
                     document.getElementById("demo").innerHTML = contents;
                 }
             };
             xmlhttp.open("GET", "thth.txt", true);
             xmlhttp.send();
+            
         </script>
         <p>Take a look at <a href="thth.txt" target="_blank">thth.txt</a></p>
     </body>
