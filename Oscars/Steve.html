@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Steve</title>
+        <style>
+            body{
+                background-color:#000;
+                color:#fff;
+            }
+            .st{
+                height:5vh;
+            }
+            .bk{
+                background-color:#008;
+                margin:auto;
+            }
+            table{
+                border:solid #fff;
+                border-collapse: collapse;
+                margin:auto;
+                font-size:2.5vmin;
+                text-align: center;
+            }
+            th{
+                border:solid #fff;
+                color:#fff;
+                background-color:#888;
+            }
+            td{
+                border:solid #fff;
+                color:#fff;
+            }
+            .ce{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+                color:#fc0;
+                font-size: 5vmin;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Steve's Picks</h2>
+        <p id="demo"></p>
+        <script>
+            var xmlhttp = new XMLHttpRequest();
+            
+            function comparey(movie, winner, cat, county){
+                if(movie === winner){
+                    county += cat;
+                }
+                return county;
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    m = JSON.parse(this.responseText);
+                    var ndx = [
+                        ["Category",   "Best Picture",  "Lead Actor",    "Lead Actress","Supporting Actor","Supporting Actress","Animated Film","Cinematography","Costume Design","Directing","Documentary","Documentary Short","Film Editing","Foreign Language","Makeup and Hairstyling","Original Score","Original Song","Production Design","Animated Short","Live Action Short","Sound Editing","Sound Mixing","Visual Effects","Adapted Screenplay","Original Screenplay"],
+                        ["Steve",   m.Stev.Best_Pic, m.Stev.Ld_Actor, m.Stev.Ld_Actrs, m.Stev.Sp_Actor, m.Stev.Sp_Actrs, m.Stev.Animated, m.Stev.Cnmtgrph, m.Stev.Cost_Des, m.Stev.Directin, m.Stev.Docmntry, m.Stev.Doc_Shrt, m.Stev.Flm_Edit, m.Stev.Frn_Lang, m.Stev.Mkp_Hair, m.Stev.Ms_Score, m.Stev.Mus_Song, m.Stev.Prod_Dsn, m.Stev.An_Short, m.Stev.Lv_Short, m.Stev.Snd_Edit, m.Stev.Snd_Mixn, m.Stev.Visul_FX, m.Stev.Adapt_SP, m.Stev.Orgnl_SP]
+                    ];
+                    
+                    var wynrz = ["Winner", m.Winner.Best_Pic, m.Winner.Ld_Actor, m.Winner.Ld_Actrs, m.Winner.Sp_Actor, m.Winner.Sp_Actrs, m.Winner.Animated, m.Winner.Cnmtgrph, m.Winner.Cost_Des, m.Winner.Directin, m.Winner.Docmntry, m.Winner.Doc_Shrt, m.Winner.Flm_Edit, m.Winner.Frn_Lang, m.Winner.Mkp_Hair, m.Winner.Ms_Score, m.Winner.Mus_Song, m.Winner.Prod_Dsn, m.Winner.An_Short, m.Winner.Lv_Short, m.Winner.Snd_Edit, m.Winner.Snd_Mixn, m.Winner.Visul_FX, m.Winner.Adapt_SP, m.Winner.Orgnl_SP];
+                    var val = ["X",         3,                   3,                 3,                  2,                 2,                 1,                1,                  1,                 2,               1,                  1,               1,                   1,                  1,                 1,                1,                 1,                  1,                 1,                 1,                  1,                1,                 1,                1  ];
+                    
+                    var c = 1;
+                    var d = 1;
+                    var contents = "";
+
+                    
+                    c = 1;
+                    var xcolor = "";
+                    var xscory = "";
+                    var yscory = 0;
+                    contents += "<table>";
+                    contents += "<tr><th>Category</th><th>Winner</th><th>Pick</th><th>Points</th><th>Total</th>";
+                    contents += "</tr>";
+                    c = 1;
+                    while(c < 25){
+                        contents += "<tr><td>" + ndx[0][c] + "</td><td>" + wynrz[c] + "</td>";
+                        
+                        d = 1;
+                        while(d < 2){
+                            if(ndx[d][c] === "na"){
+                                xcolor = "#000";
+                            }
+                            else if(ndx[d][c] === wynrz[c]){
+                                xcolor = "#08f";
+                                xscory = " +" + val[c];
+                                yscory += val[c];
+                                }
+                                else{
+                                    xcolor = "#f20";
+                                }
+                            contents += "<td style='background-color:" + xcolor + "'>" + ndx[d][c] + "</td><td>" + xscory + "</td>";
+                            contents += "<td>" + yscory + "</td>";
+                            d++;
+                            xscory = "";
+                        }
+                        contents += "</tr>";
+                        c++;
+                    }
+                    contents += "</table>";
+                    
+                    document.getElementById("demo").innerHTML = contents;
+                }
+            };
+            xmlhttp.open("GET", "thth.txt", true);
+            xmlhttp.send();
+            
+        </script>
+        <p>Take a look at <a href="thth.txt" target="_blank">thth.txt</a></p>
+    </body>
+</html>

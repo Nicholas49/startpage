@@ -1,72 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Oscar Scores</title>
+        <title>Oscar Graphs</title>
         <style>
             body{
                 background-color:#000;
                 color:#fff;
-                font-family: arial, helvetica, sans-serif;
             }
             .st{
-                height:6vh;
-                font-size: 2.5vmin;
+                height:5vh;
             }
             .bk{
                 background-color:#008;
-                border: solid 0.5vmin #000;
                 margin:auto;
             }
             table{
-                border:solid #000;
+                border:solid #00f;
                 border-collapse: collapse;
-                width:90%;
                 margin:auto;
+                font-size:2vmin;
                 text-align: center;
+            }
+            th{
+                border:solid #fff;
+                color:#fff;
+                background-color:#888;
             }
             td{
-                width:1%;
-                border:solid #000;
+                border:solid #ff0;
                 color:#fff;
             }
-            .headr{
-                font-size:5vmin;
-                color:#fc0;
-            }
-            .side{
-                text-align: center;
-            }
+            
             .ce{
                 text-align: center;
-                margin: 0;
             }
-            .lnk{
-                color:#fff;
-                text-decoration: none;
-            }
-            span{
-                background-color:#06f;
-                color:#fff;
-                text-decoration: none;
-                font-size: 2vmin;
+            h2{
+                text-align: center;
+                color:#fc0;
+                font-size: 5vmin;
             }
         </style>
     </head>
     <body>
-        <table>
-            <tr>
-                <td>
-                <td class="headr"><strong>Oscar Scores</strong></td>
-                <td>
-                    <a href="Chart.html">
-                        <div>
-                            <p class="side"><span> Full Chart </span></p>
-                        </div>
-                    </a>
-                </td>
-            </tr>
-        </table>
-            <div id="demo"></div>
+        <h2>Oscar Graph</h2>
+        <p id="demo"></p>
         <script>
             var xmlhttp = new XMLHttpRequest();
             
@@ -86,7 +63,7 @@
                         ["Chris",    m.Chri.Best_Pic, m.Chri.Ld_Actor, m.Chri.Ld_Actrs, m.Chri.Sp_Actor, m.Chri.Sp_Actrs, m.Chri.Animated, m.Chri.Cnmtgrph, m.Chri.Cost_Des, m.Chri.Directin, m.Chri.Docmntry, m.Chri.Doc_Shrt, m.Chri.Flm_Edit, m.Chri.Frn_Lang, m.Chri.Mkp_Hair, m.Chri.Ms_Score, m.Chri.Mus_Song, m.Chri.Prod_Dsn, m.Chri.An_Short, m.Chri.Lv_Short, m.Chri.Snd_Edit, m.Chri.Snd_Mixn, m.Chri.Visul_FX, m.Chri.Adapt_SP, m.Chri.Orgnl_SP],
                         ["Courtney", m.Cour.Best_Pic, m.Cour.Ld_Actor, m.Cour.Ld_Actrs, m.Cour.Sp_Actor, m.Cour.Sp_Actrs, m.Cour.Animated, m.Cour.Cnmtgrph, m.Cour.Cost_Des, m.Cour.Directin, m.Cour.Docmntry, m.Cour.Doc_Shrt, m.Cour.Flm_Edit, m.Cour.Frn_Lang, m.Cour.Mkp_Hair, m.Cour.Ms_Score, m.Cour.Mus_Song, m.Cour.Prod_Dsn, m.Cour.An_Short, m.Cour.Lv_Short, m.Cour.Snd_Edit, m.Cour.Snd_Mixn, m.Cour.Visul_FX, m.Cour.Adapt_SP, m.Cour.Orgnl_SP],
                         ["Josh",     m.Josh.Best_Pic, m.Josh.Ld_Actor, m.Josh.Ld_Actrs, m.Josh.Sp_Actor, m.Josh.Sp_Actrs, m.Josh.Animated, m.Josh.Cnmtgrph, m.Josh.Cost_Des, m.Josh.Directin, m.Josh.Docmntry, m.Josh.Doc_Shrt, m.Josh.Flm_Edit, m.Josh.Frn_Lang, m.Josh.Mkp_Hair, m.Josh.Ms_Score, m.Josh.Mus_Song, m.Josh.Prod_Dsn, m.Josh.An_Short, m.Josh.Lv_Short, m.Josh.Snd_Edit, m.Josh.Snd_Mixn, m.Josh.Visul_FX, m.Josh.Adapt_SP, m.Josh.Orgnl_SP],
-                        ["Keith",    m.Kths.Best_Pic, m.Kths.Ld_Actor, m.Kths.Ld_Actrs, m.Kths.Sp_Actor, m.Kths.Sp_Actrs, m.Kths.Animated, m.Kths.Cnmtgrph, m.Kths.Cost_Des, m.Kths.Directin, m.Kths.Docmntry, m.Kths.Doc_Shrt, m.Kths.Flm_Edit, m.Kths.Frn_Lang, m.Kths.Mkp_Hair, m.Kths.Ms_Score, m.Kths.Mus_Song, m.Kths.Prod_Dsn, m.Kths.An_Short, m.Kths.Lv_Short, m.Kths.Snd_Edit, m.Kths.Snd_Mixn, m.Kths.Visul_FX, m.Kths.Adapt_SP, m.Kths.Orgnl_SP],
+                        ["Kieth",    m.Kths.Best_Pic, m.Kths.Ld_Actor, m.Kths.Ld_Actrs, m.Kths.Sp_Actor, m.Kths.Sp_Actrs, m.Kths.Animated, m.Kths.Cnmtgrph, m.Kths.Cost_Des, m.Kths.Directin, m.Kths.Docmntry, m.Kths.Doc_Shrt, m.Kths.Flm_Edit, m.Kths.Frn_Lang, m.Kths.Mkp_Hair, m.Kths.Ms_Score, m.Kths.Mus_Song, m.Kths.Prod_Dsn, m.Kths.An_Short, m.Kths.Lv_Short, m.Kths.Snd_Edit, m.Kths.Snd_Mixn, m.Kths.Visul_FX, m.Kths.Adapt_SP, m.Kths.Orgnl_SP],
                         ["Monica",   m.Moni.Best_Pic, m.Moni.Ld_Actor, m.Moni.Ld_Actrs, m.Moni.Sp_Actor, m.Moni.Sp_Actrs, m.Moni.Animated, m.Moni.Cnmtgrph, m.Moni.Cost_Des, m.Moni.Directin, m.Moni.Docmntry, m.Moni.Doc_Shrt, m.Moni.Flm_Edit, m.Moni.Frn_Lang, m.Moni.Mkp_Hair, m.Moni.Ms_Score, m.Moni.Mus_Song, m.Moni.Prod_Dsn, m.Moni.An_Short, m.Moni.Lv_Short, m.Moni.Snd_Edit, m.Moni.Snd_Mixn, m.Moni.Visul_FX, m.Moni.Adapt_SP, m.Moni.Orgnl_SP],
                         ["Nicholas", m.Nich.Best_Pic, m.Nich.Ld_Actor, m.Nich.Ld_Actrs, m.Nich.Sp_Actor, m.Nich.Sp_Actrs, m.Nich.Animated, m.Nich.Cnmtgrph, m.Nich.Cost_Des, m.Nich.Directin, m.Nich.Docmntry, m.Nich.Doc_Shrt, m.Nich.Flm_Edit, m.Nich.Frn_Lang, m.Nich.Mkp_Hair, m.Nich.Ms_Score, m.Nich.Mus_Song, m.Nich.Prod_Dsn, m.Nich.An_Short, m.Nich.Lv_Short, m.Nich.Snd_Edit, m.Nich.Snd_Mixn, m.Nich.Visul_FX, m.Nich.Adapt_SP, m.Nich.Orgnl_SP],
                         ["Theresa",  m.Ther.Best_Pic, m.Ther.Ld_Actor, m.Ther.Ld_Actrs, m.Ther.Sp_Actor, m.Ther.Sp_Actrs, m.Ther.Animated, m.Ther.Cnmtgrph, m.Ther.Cost_Des, m.Ther.Directin, m.Ther.Docmntry, m.Ther.Doc_Shrt, m.Ther.Flm_Edit, m.Ther.Frn_Lang, m.Ther.Mkp_Hair, m.Ther.Ms_Score, m.Ther.Mus_Song, m.Ther.Prod_Dsn, m.Ther.An_Short, m.Ther.Lv_Short, m.Ther.Snd_Edit, m.Ther.Snd_Mixn, m.Ther.Visul_FX, m.Ther.Adapt_SP, m.Ther.Orgnl_SP],
@@ -97,62 +74,65 @@
                     
                     var wynrz = ["Winner", m.Winner.Best_Pic, m.Winner.Ld_Actor, m.Winner.Ld_Actrs, m.Winner.Sp_Actor, m.Winner.Sp_Actrs, m.Winner.Animated, m.Winner.Cnmtgrph, m.Winner.Cost_Des, m.Winner.Directin, m.Winner.Docmntry, m.Winner.Doc_Shrt, m.Winner.Flm_Edit, m.Winner.Frn_Lang, m.Winner.Mkp_Hair, m.Winner.Ms_Score, m.Winner.Mus_Song, m.Winner.Prod_Dsn, m.Winner.An_Short, m.Winner.Lv_Short, m.Winner.Snd_Edit, m.Winner.Snd_Mixn, m.Winner.Visul_FX, m.Winner.Adapt_SP, m.Winner.Orgnl_SP];
                     var val = ["X",         3,                   3,                 3,                  2,                 2,                 1,                1,                  1,                 2,               1,                  1,               1,                   1,                  1,                 1,                1,                 1,                  1,                 1,                 1,                  1,                1,                 1,                1  ];
-                                            
+                    
+                        
                     var scor = [
-                        ["Player",0,""],
-                        ["Angela", 0,"Angela.html"],
-                        ["Bob", 0,"Bob.html"],
-                        ["Chris", 0,"Chris.html"],
-                        ["Courtney", 0,"Courtney.html"],
-                        ["Josh", 0,"Josh.html"],
-                        ["Keith", 0,"Keith.html"],
-                        ["Monica", 0,"Monica.html"],
-                        ["Nicholas", 0,"Nicholas.html"],
-                        ["Theresa", 0,"Theresa.html"],
-                        ["Tina", 0,"Tina.html"],
-                        ["Tom", 0,"Tom.html"],
-                        ["Steve", 0,"Steve.html"]
+                        ["Player",0],
+                        ["Angela", 0],
+                        ["Bob", 0],
+                        ["Chris", 0],
+                        ["Courtney", 0],
+                        ["Josh", 0],
+                        ["Kieth", 0],
+                        ["Monica", 0],
+                        ["Nicholas", 0],
+                        ["Theresa", 0],
+                        ["Tina", 0],
+                        ["Tom", 0],
+                        ["Steve", 0]
                     ];
                     
                     var c = 1;
                     var d = 1;
                     var contents = "";
-                    while(c < 13){
-                        while(d < 25){
-                            if(ndx[c][d] === wynrz[d]){
-                                scor[c][1] += val[d];
-                            }
-                            d++;
-                        }
-                        c++;
-                        d = 1;
-                    }
+
                     
                     c = 1;
-                    d = 0;
-                    var g = 1;
-                    var holdar = ["blah", 0, "blah"];
-                    while(d === 0){
-                        d = 1;
-                        while(c < 12){
-                            if(scor[c][1] < scor[c + 1][1]){
-                                
-                                holdar = scor[c];
-                                scor[c] = scor[c + 1];
-                                scor[c + 1] = holdar;
-                                d = 0;
-                                g++;
-                            }
-                            c++;
-                        }
-                        c = 1;
-                    }
-                    
-
+                    var xcolor = "";
+                    var xscory = "";
+                    var totl = 0;
+                    contents += "<table>";
+                    contents += "<tr><th>Category</th><th>Winner</th>";
                     while(c < 13){
-                        contents += "<a href='" + scor[c][2] + "' class='lnk'><div class='st bk' style='width:" + (scor[c][1] * 3) + "%'><p class='ce'>" + scor[c][0] + ": " + scor[c][1] + "</p></div></a>";
+                        contents += "<th colspan='3'>" + ndx[c][0] + "</th>";
                         c++;
                     }
+                    contents += "</tr>";
+                    c = 1;
+                    while(c < 25){
+                        contents += "<tr><td>" + ndx[0][c] + "</td><td>" + wynrz[c] + "</td>";
+                        
+                        d = 1;
+                        while(d < 13){
+                            if(ndx[d][c] === "na"){
+                                xcolor = "#000";
+                            }
+                            else if(ndx[d][c] === wynrz[c]){
+                                xcolor = "#08f";
+                                xscory = " +" + val[c];
+                                scor[d][1] += val[c];
+                                }
+                                else{
+                                    xcolor = "#f20";
+                                }
+                            contents += "<td style='background-color:" + xcolor + "'>" + ndx[d][c] + "</td><td>" + xscory + "</td><td>" + scor[d][1] + "</td>";
+                            d++;
+                            xscory = "";
+                        }
+                        contents += "</tr>";
+                        c++;
+                    }
+                    contents += "</table>";
                     
                     document.getElementById("demo").innerHTML = contents;
                 }
@@ -161,6 +141,6 @@
             xmlhttp.send();
             
         </script>
-        <p>Click or tap a bar to see full list.</p>
+        <p>Take a look at <a href="thth.txt" target="_blank">thth.txt</a></p>
     </body>
 </html>
