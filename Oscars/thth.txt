@@ -219,7 +219,7 @@
 	"Directin":"La La Land",
 	"Docmntry":"O.J.: Made in America",
 	"Doc_Shrt":"Watani: My Homeland",
-	"Flm_Edit":"Hacksaw Ridge",
+	"Flm_Edit":"La La Land",
 	"Frn_Lang":"A Man Called Ove",
 	"Mkp_Hair":"Star Trek Beyond",
 	"Ms_Score":"La La Land",
