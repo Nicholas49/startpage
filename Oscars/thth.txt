@@ -227,8 +227,8 @@
 	"Prod_Dsn":"Passengers",
 	"An_Short":"Piper",
 	"Lv_Short":"La Femme et Le TGV",
-	"Snd_Edit":"Deepwater Horizon",
-	"Snd_Mixn":"Hacksaw Ridge",
+	"Snd_Edit":"Hacksaw Ridge",
+	"Snd_Mixn":"La La Land",
 	"Visul_FX":"The Jungle Book",
 	"Adapt_SP":"Moonlight",
 	"Orgnl_SP":"Manchester by the Sea"
