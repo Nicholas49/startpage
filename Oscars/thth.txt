@@ -26,7 +26,7 @@
 	"Orgnl_SP":"Manchester by the Sea"
 },
 "Ange": {
-	"Best_Pic":"Arrival",
+	"Best_Pic":"La La Land",
 	"Ld_Actor":"Casey Affleck",
 	"Ld_Actrs":"Isabelle Huppert",
 	"Sp_Actor":"Mahershala Ali",
