@@ -212,7 +212,7 @@
 	"Ld_Actor":"Casey Affleck",
 	"Ld_Actrs":"Natalie Portman",
 	"Sp_Actor":"Mahershala Ali",
-	"Sp_Actrs":"Viola Davis",
+	"Sp_Actrs":"Emma Stone",
 	"Animated":"Zootopia",
 	"Cnmtgrph":"Arrival",
 	"Cost_Des":"Fantastic Beasts and Where to Find Them",
