@@ -214,7 +214,7 @@
 	"Sp_Actor":"Mahershala Ali",
 	"Sp_Actrs":"Emma Stone",
 	"Animated":"Zootopia",
-	"Cnmtgrph":"Arrival",
+	"Cnmtgrph":"La La Land",
 	"Cost_Des":"Fantastic Beasts and Where to Find Them",
 	"Directin":"La La Land",
 	"Docmntry":"O.J.: Made in America",
