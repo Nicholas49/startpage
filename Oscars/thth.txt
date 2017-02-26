@@ -215,7 +215,7 @@
 	"Sp_Actrs":"Emma Stone",
 	"Animated":"Zootopia",
 	"Cnmtgrph":"La La Land",
-	"Cost_Des":"Fantastic Beasts and Where to Find Them",
+	"Cost_Des":"Jackie",
 	"Directin":"La La Land",
 	"Docmntry":"O.J.: Made in America",
 	"Doc_Shrt":"Watani: My Homeland",
