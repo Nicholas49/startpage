@@ -216,7 +216,7 @@
 	"Animated":"Zootopia",
 	"Cnmtgrph":"Arrival",
 	"Cost_Des":"Fantastic Beasts and Where to Find Them",
-	"Directin":"Moonlight",
+	"Directin":"La La Land",
 	"Docmntry":"O.J.: Made in America",
 	"Doc_Shrt":"Extremis",
 	"Flm_Edit":"Hacksaw Ridge",
