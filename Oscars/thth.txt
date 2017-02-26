@@ -49,7 +49,8 @@
 	"Snd_Mixn":"Arrival",
 	"Visul_FX":"Deepwater Horizon",
 	"Adapt_SP":"Arrival",
-	"Orgnl_SP":"Hell or High Water"
+	"Orgnl_SP":"Hell or High Water",
+	"Color":"#c00"
 },
 "BobF": {
 	"Best_Pic":"Fences",
@@ -75,7 +76,8 @@
 	"Snd_Mixn":"Hacksaw Ridge",
 	"Visul_FX":"Doctor Strange",
 	"Adapt_SP":"Fences",
-	"Orgnl_SP":"La La Land"
+	"Orgnl_SP":"La La Land",
+	"Color":"#fa0"
 },
 "Chri": {
 	"Best_Pic":"Hacksaw Ridge",
@@ -101,7 +103,8 @@
 	"Snd_Mixn":"La La Land",
 	"Visul_FX":"The Jungle Book",
 	"Adapt_SP":"Hidden Figures",
-	"Orgnl_SP":"The Lobster"
+	"Orgnl_SP":"The Lobster",
+	"Color":"#0cc"
 },
 "Cour": {
 	"Best_Pic":"Hell or High Water",
@@ -127,7 +130,8 @@
 	"Snd_Mixn":"Rogue One: A Star Wars Story",
 	"Visul_FX":"Kubo and the Two Strings",
 	"Adapt_SP":"Lion",
-	"Orgnl_SP":"Manchester by the Sea"
+	"Orgnl_SP":"Manchester by the Sea",
+	"Color":"#a0a"
 },
 "Josh": {
 	"Best_Pic":"Hidden Figures",
@@ -153,7 +157,8 @@
 	"Snd_Mixn":"13 Hours: The Secret Soldiers of Benghazi",
 	"Visul_FX":"Rogue One: A Star Wars Story",
 	"Adapt_SP":"Moonlight",
-	"Orgnl_SP":"20th Century Women"
+	"Orgnl_SP":"20th Century Women",
+	"Color":"#f60"
 },
 "Kths": {
 	"Best_Pic":"La La Land",
@@ -179,7 +184,8 @@
 	"Snd_Mixn":"Arrival",
 	"Visul_FX":"Deepwater Horizon",
 	"Adapt_SP":"Arrival",
-	"Orgnl_SP":"Hell or High Water"
+	"Orgnl_SP":"Hell or High Water",
+	"Color":"#008"
 },
 "Moni": {
 	"Best_Pic":"Lion",
@@ -205,7 +211,8 @@
 	"Snd_Mixn":"Hacksaw Ridge",
 	"Visul_FX":"Doctor Strange",
 	"Adapt_SP":"Fences",
-	"Orgnl_SP":"La La Land"
+	"Orgnl_SP":"La La Land",
+	"Color":"#080"
 },
 "Nich": {
 	"Best_Pic":"La La Land",
@@ -232,6 +239,7 @@
 	"Visul_FX":"The Jungle Book",
 	"Adapt_SP":"Moonlight",
 	"Orgnl_SP":"Manchester by the Sea"
+	"Color":"#800"
 },
 "Ther": {
 	"Best_Pic":"Manchester by the Sea",
@@ -257,7 +265,8 @@
 	"Snd_Mixn":"La La Land",
 	"Visul_FX":"The Jungle Book",
 	"Adapt_SP":"Hidden Figures",
-	"Orgnl_SP":"Manchester by the Sea"
+	"Orgnl_SP":"Manchester by the Sea",
+	"Color":"#f67"
 },
 "TomL": {
 	"Best_Pic":"Moonlight",
@@ -283,7 +292,8 @@
 	"Snd_Mixn":"Rogue One: A Star Wars Story",
 	"Visul_FX":"Kubo and the Two Strings",
 	"Adapt_SP":"Lion",
-	"Orgnl_SP":"20th Century Women"
+	"Orgnl_SP":"20th Century Women",
+	"Color":"#8c0"
 },
 "Tina":{
 	"Best_Pic":"Arrival",
@@ -309,7 +319,8 @@
 	"Snd_Mixn":"13 Hours: The Secret Soldiers of Benghazi",
 	"Visul_FX":"Rogue One: A Star Wars Story",
 	"Adapt_SP":"Moonlight",
-	"Orgnl_SP":"Hell or High Water"
+	"Orgnl_SP":"Hell or High Water",
+	"Color":"#60f"
 },
 "Stev": {
 	"Best_Pic":"Fences",
@@ -335,6 +346,7 @@
 	"Snd_Mixn":"Arrival",
 	"Visul_FX":"Deepwater Horizon",
 	"Adapt_SP":"Arrival",
-	"Orgnl_SP":"La La Land"
+	"Orgnl_SP":"La La Land",
+	"Color":"#740"
 }
 }
