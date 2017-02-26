@@ -45,7 +45,7 @@
                 text-decoration: none;
             }
             span{
-                background-color:#06f;
+                background-color:#da0;
                 color:#fff;
                 text-decoration: none;
                 font-size: 3vmin;
@@ -99,19 +99,19 @@
                     var val = ["X",         3,                   3,                 3,                  2,                 2,                 1,                1,                  1,                 2,               1,                  1,               1,                   1,                  1,                 1,                1,                 1,                  1,                 1,                 1,                  1,                1,                 1,                1  ];
                                             
                     var scor = [
-                        ["Player",0,""],
-                        ["Angela", 0,"Angela.html"],
-                        ["Bob", 0,"Bob.html"],
-                        ["Chris", 0,"Chris.html"],
-                        ["Courtney", 0,"Courtney.html"],
-                        ["Josh", 0,"Josh.html"],
-                        ["Keith", 0,"Keith.html"],
-                        ["Monica", 0,"Monica.html"],
-                        ["Nicholas", 0,"Nicholas.html"],
-                        ["Theresa", 0,"Theresa.html"],
-                        ["Tina", 0,"Tina.html"],
-                        ["Tom", 0,"Tom.html"],
-                        ["Steve", 0,"Steve.html"]
+                        ["Player",0,"", m.Ange.Color],
+                        ["Angela", 0,"Angela.html", m.Ange.Color],
+                        ["Bob", 0,"Bob.html", m.BobF.Color],
+                        ["Chris", 0,"Chris.html", m.Chri.Color],
+                        ["Courtney", 0,"Courtney.html", m.Cour.Color],
+                        ["Josh", 0,"Josh.html", m.Josh.Color],
+                        ["Keith", 0,"Keith.html", m.Kths.Color],
+                        ["Monica", 0,"Monica.html", m.Moni.Color],
+                        ["Nicholas", 0,"Nicholas.html", m.Nich.Color],
+                        ["Theresa", 0,"Theresa.html", m.Ther.Color],
+                        ["Tina", 0,"Tina.html", m.Tina.Color],
+                        ["Tom", 0,"Tom.html", m.TomL.Color],
+                        ["Steve", 0,"Steve.html", m.Stev.Color]
                     ];
                     
                     var c = 1;
@@ -150,7 +150,7 @@
                     
 
                     while(c < 13){
-                        contents += "<a href='" + scor[c][2] + "' class='lnk'><div class='st bk' style='width:" + (scor[c][1] * 3) + "%'><p class='ce'>" + scor[c][0] + ":" + scor[c][1] + "</p></div></a>";
+                        contents += "<a href='" + scor[c][2] + "' class='lnk'><div class='st bk' style='width:" + (scor[c][1] * 3) + "%; background-color:" + scor[c][3] + "'><p class='ce'>" + scor[c][0] + ":" + scor[c][1] + "</p></div></a>";
                         c++;
                     }
                     
