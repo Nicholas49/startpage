@@ -220,7 +220,7 @@
 	"Docmntry":"O.J.: Made in America",
 	"Doc_Shrt":"Watani: My Homeland",
 	"Flm_Edit":"La La Land",
-	"Frn_Lang":"A Man Called Ove",
+	"Frn_Lang":"The Salesman",
 	"Mkp_Hair":"Star Trek Beyond",
 	"Ms_Score":"La La Land",
 	"Mus_Song":"City of Stars",
