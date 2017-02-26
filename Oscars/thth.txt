@@ -222,7 +222,7 @@
 	"Flm_Edit":"Hacksaw Ridge",
 	"Frn_Lang":"A Man Called Ove",
 	"Mkp_Hair":"A Man Called Ove",
-	"Ms_Score":"La La Land",
+	"Ms_Score":"Star Trek Beyond",
 	"Mus_Song":"Audition (The Fools Who Dream)",
 	"Prod_Dsn":"Passengers",
 	"An_Short":"Piper",
