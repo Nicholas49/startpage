@@ -34,7 +34,7 @@
 	"Animated":"Kubo and the Two Strings",
 	"Cnmtgrph":"Arrival",
 	"Cost_Des":"Allied",
-	"Directin":"Arrival",
+	"Directin":"La La Land",
 	"Docmntry":"Fire at Sea",
 	"Doc_Shrt":"Extremis",
 	"Flm_Edit":"Arrival",
