@@ -210,7 +210,7 @@
 "Nich": {
 	"Best_Pic":"La La Land",
 	"Ld_Actor":"Casey Affleck",
-	"Ld_Actrs":"Natalie Portman",
+	"Ld_Actrs":"Emma Stone",
 	"Sp_Actor":"Mahershala Ali",
 	"Sp_Actrs":"Emma Stone",
 	"Animated":"Zootopia",
