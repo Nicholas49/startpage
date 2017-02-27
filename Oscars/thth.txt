@@ -5,7 +5,7 @@
 	"Ld_Actrs":"na",
 	"Sp_Actor":"Mahershala Ali",
 	"Sp_Actrs":"Viola Davis",
-	"Animated":"na",
+	"Animated":"Zootopia",
 	"Cnmtgrph":"na",
 	"Cost_Des":"Fantastic Beasts and Where to Find Them",
 	"Directin":"na",
