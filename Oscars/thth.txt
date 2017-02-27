@@ -1,6 +1,6 @@
 {
 "Winner": {
-	"Best_Pic":"na",
+	"Best_Pic":"La La Land",
 	"Ld_Actor":"Casey Affleck",
 	"Ld_Actrs":"Emma Stone",
 	"Sp_Actor":"Mahershala Ali",
