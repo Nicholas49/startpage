@@ -21,7 +21,7 @@
 	"Lv_Short":"na",
 	"Snd_Edit":"Arrival",
 	"Snd_Mixn":"Hacksaw Ridge",
-	"Visul_FX":"na",
+	"Visul_FX":"The Jungle Book",
 	"Adapt_SP":"na",
 	"Orgnl_SP":"na"
 },
