@@ -1,7 +1,7 @@
 {
 "Winner": {
 	"Best_Pic":"na",
-	"Ld_Actor":"na",
+	"Ld_Actor":"Casey Affleck",
 	"Ld_Actrs":"na",
 	"Sp_Actor":"Mahershala Ali",
 	"Sp_Actrs":"Viola Davis",
