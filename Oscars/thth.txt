@@ -13,7 +13,7 @@
 	"Doc_Shrt":"na",
 	"Flm_Edit":"na",
 	"Frn_Lang":"na",
-	"Mkp_Hair":"na",
+	"Mkp_Hair":"Suicide Squad",
 	"Ms_Score":"na",
 	"Mus_Song":"na",
 	"Prod_Dsn":"na",
