@@ -8,7 +8,7 @@
 	"Animated":"Zootopia",
 	"Cnmtgrph":"La La Land",
 	"Cost_Des":"Fantastic Beasts and Where to Find Them",
-	"Directin":"na",
+	"Directin":"La La Land",
 	"Docmntry":"O.J.: Made in America",
 	"Doc_Shrt":"The White Helmets",
 	"Flm_Edit":"Hacksaw Ridge",
