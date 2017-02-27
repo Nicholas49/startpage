@@ -4,7 +4,7 @@
 	"Ld_Actor":"na",
 	"Ld_Actrs":"na",
 	"Sp_Actor":"Mahershala Ali",
-	"Sp_Actrs":"na",
+	"Sp_Actrs":"Viola Davis",
 	"Animated":"na",
 	"Cnmtgrph":"na",
 	"Cost_Des":"Fantastic Beasts and Where to Find Them",
