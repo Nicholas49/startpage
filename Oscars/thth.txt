@@ -6,7 +6,7 @@
 	"Sp_Actor":"Mahershala Ali",
 	"Sp_Actrs":"Viola Davis",
 	"Animated":"Zootopia",
-	"Cnmtgrph":"na",
+	"Cnmtgrph":"La La Land",
 	"Cost_Des":"Fantastic Beasts and Where to Find Them",
 	"Directin":"na",
 	"Docmntry":"O.J.: Made in America",
