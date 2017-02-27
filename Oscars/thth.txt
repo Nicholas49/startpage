@@ -23,7 +23,7 @@
 	"Snd_Mixn":"Hacksaw Ridge",
 	"Visul_FX":"The Jungle Book",
 	"Adapt_SP":"na",
-	"Orgnl_SP":"na"
+	"Orgnl_SP":"Manchester by the Sea"
 },
 "Ange": {
 	"Best_Pic":"La La Land",
