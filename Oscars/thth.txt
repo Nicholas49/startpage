@@ -50,7 +50,7 @@
 	"Visul_FX":"Deepwater Horizon",
 	"Adapt_SP":"Arrival",
 	"Orgnl_SP":"Hell or High Water",
-	"Color":"#c00"
+	"Color":"#f0f"
 },
 "BobF": {
 	"Best_Pic":"Fences",
