@@ -18,7 +18,7 @@
 	"Mus_Song":"City of Stars",
 	"Prod_Dsn":"La La Land",
 	"An_Short":"Piper",
-	"Lv_Short":"Ennemis Enterieurs",
+	"Lv_Short":"Ennemis Interieurs",
 	"Snd_Edit":"Hacksaw Ridge",
 	"Snd_Mixn":"La La Land",
 	"Visul_FX":"The Jungle Book",
