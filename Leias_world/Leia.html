@@ -1,0 +1,35 @@
+<head>
+    <title>
+        Liea's World
+    </title>
+    <style>
+        .hed {
+            text-align: center;
+            font-size: 10vmin;
+            font-weight: bold;
+        }
+        .piq {
+            height:30vmin;
+            margin: 2vmin;
+        }
+        .boqs {
+            margin: auto;
+        }
+    </style>
+    <script>
+        function leia() {
+            var piqs = "";
+            for(j = 0; j < 20; j++){
+                for(i = 1; i < 6; i++) {
+                    piqs += "<a href='pics/L" + i + ".jpg'><img src='pics/L" + i + ".jpg' class=piq></a>";
+                }
+            }
+            document.getElementById("col").style.color = "#" + Math.floor(Math.random() * 999);
+            document.getElementById("piqlist").innerHTML= piqs;
+        }
+    </script>
+</head>
+<body onload="leia()">
+    <p id='col' class='hed'>Liea's World</p>
+    <div id='piqlist' class="boqs"></div>
+</body>
