@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Random Leia</title>
+        <style>
+            body {
+                background-color: black;
+            }
+            div {
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                max-width: 100%;
+                max-height: 100%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <script>
+            function set() {
+                var a;
+            }
+            function Leia (){
+                var rand = Math.floor(Math.random() * 25.9);
+                while (rand === set.a) {
+                    var rand = Math.floor(Math.random() * 25.9);
+                }
+                set.a = rand;
+                var pic;
+                pic = "pics/L" + rand;
+                document.getElementById("frame").innerHTML= "<img src='"+pic+".jpg'>";
+            }
+        </script>
+    </head>
+    <body onload="Leia()">
+        <div id="frame" onclick="Leia()"></div>
+    </body>
+</html>

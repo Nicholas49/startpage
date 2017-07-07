@@ -1,16 +1,32 @@
 <head>
     <title>
-        Liea's World
+        Leia's World
     </title>
     <style>
-        .hed {
-            text-align: center;
-            font-size: 10vmin;
+        table, td {
+            margin: auto;
             font-weight: bold;
         }
+        td {
+            width: 15%;
+        }
+        .mid {
+            width: 30%;
+        }
+        .hed {
+            font-size: 10vmin;
+            text-align: center;
+        }
         .piq {
-            height:30vmin;
-            margin: 2vmin;
+            height:20vmin;
+            margin: 1vmin;
+            border: 10px solid;
+            border-radius: 10px;
+            transition: all 6s;
+        }
+        .piq:hover {
+            height:40vmin;
+            transition: all 2s;
         }
         .boqs {
             margin: auto;
@@ -20,8 +36,8 @@
         function leia() {
             var piqs = "";
             for(j = 0; j < 2; j++){
-                for(i = 1; i < 9; i++) {
-                    piqs += "<a href='pics/L" + i + ".jpg'><img src='pics/s" + i + ".jpg' class=piq></a>";
+                for(i = 0; i < 26; i++) {
+                    piqs += "<a href='pics/L" + i + ".jpg'><img src='pics/s" + i + ".jpg' class='piq' style='border-color:#" + Math.floor(Math.random() * 999) + "'></a>";
                 }
             }
             document.getElementById("col").style.color = "#" + Math.floor(Math.random() * 999);
@@ -30,6 +46,12 @@
     </script>
 </head>
 <body onload="leia()">
-    <p id='col' class='hed'>Liea's World</p>
+    <table>
+        <tr>
+            <td></td>
+            <td class="mid"><p id='col' class="hed">Leia's World</p></td>
+            <td><a href="Random.html">Random</a></td>
+        </tr>
+    </table>
     <div id='piqlist' class="boqs"></div>
 </body>
