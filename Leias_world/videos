@@ -1,0 +1,56 @@
+<head>
+    <title>
+        Leia's Videos
+    </title>
+    <style>
+        body {
+            margin: 0%;
+        }
+        table, td {
+            width: 99%;
+            margin: auto;
+            font-weight: bold;
+            text-align: center;
+        }
+        td {
+            width: 33%;
+        }
+        .hed {
+            font-size: 10vmin;
+            text-align: center;
+        }
+        .piq {
+            height:40vmin;
+            margin: 1vmin;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .boqs {
+            margin: auto;
+        }
+    </style>
+    <script>
+        function leia() {
+            var urlss = ["u5VffI4Q9D8", "lZKq5pwZV_k", "LWTbLzMRuY4", "PVM9RJl8feI"];
+            var piqs = "";
+            var c = 20;
+            for(i = 0; i < c; i++) {
+                    var n = c - i;
+                    piqs += "<iframe width='420' height='345' src='https://www.youtube.com/embed/" + urlss[i] + "?'></iframe>";
+            }
+            document.getElementById("col").style.color = "#" + Math.floor(Math.random() * 999);
+            document.getElementById("piqlist").innerHTML = piqs;
+        }
+    </script>
+</head>
+<body onload="leia()">
+    <table>
+        <tr>
+            <td><p id='col' class="hed">Videos</p></td>
+            <td><a href="Leia.html">Pictures</a></td>
+            <td><a href="Random.html">Random Picture</a></td>
+        </tr>
+    </table>
+    <div id='piqlist' class="boqs">
+    </div>
+</body>
