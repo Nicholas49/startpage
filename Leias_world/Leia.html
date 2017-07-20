@@ -35,10 +35,8 @@
     <script>
         function leia() {
             var piqs = "";
-            for(j = 0; j < 2; j++){
-                for(i = 0; i < 26; i++) {
+            for(i = 0; i < 26; i++) {
                     piqs += "<a href='media/Large/L" + i + ".jpg'><img src='media/small/s" + i + ".jpg' class='piq' style='border-color:#" + Math.floor(Math.random() * 999) + "'></a>";
-                }
             }
             document.getElementById("col").style.color = "#" + Math.floor(Math.random() * 999);
             document.getElementById("piqlist").innerHTML= piqs;
