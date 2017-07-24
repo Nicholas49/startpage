@@ -30,13 +30,12 @@
                 var a;
             }
             function Leia (){
-                var rand = Math.floor(Math.random() * 56.9);
+                var rand = Math.floor(Math.random() * 54.9);
                 while (rand === set.a) {
-                    var rand = Math.floor(Math.random() * 56.9);
+                    var rand = Math.floor(Math.random() * 54.9);
                 }
                 set.a = rand;
-                var pic;
-                pic = "pics/L" + rand;
+                var pic = "L" + rand;
                 document.getElementById("frame").innerHTML= "<img src='media/pics/Large/"+pic+".jpg'>";
             }
         </script>

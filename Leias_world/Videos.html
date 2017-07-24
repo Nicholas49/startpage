@@ -1,43 +1,26 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>
         Leia's Videos
     </title>
-    <style>
-        body {
-            margin: 0%;
-        }
-        table, td {
-            width: 99%;
-            margin: auto;
-            font-weight: bold;
-            text-align: center;
-        }
-        td {
-            width: 33%;
-        }
-        .hed {
-            font-size: 10vmin;
-            text-align: center;
-        }
-        .vidbox {
-            height:27vmin;
-            width:40vmin;
-            margin: 1vmin;
-            border: 10px solid;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="stylz.css">
     <script>
         function leia() {
             var urlss = ["u5VffI4Q9D8", "lZKq5pwZV_k", "LWTbLzMRuY4", "PVM9RJl8feI"];
             var piqs = "";
             var c = 20;
             for(i = 0; i < c; i++) {
-                    var n = c - i;
-                    piqs += "<iframe class='vidbox' src='https://www.youtube.com/embed/" + urlss[i] + "?'></iframe>";
+                var n = c - i;
+                piqs += "<iframe class='vidbox' src='https://www.youtube.com/embed/" + urlss[i] + "?'></iframe>";
             }
-            document.getElementById("col").style.color = "#" + Math.floor(Math.random() * 999);
+            var kulr = "#" + Math.floor(Math.random() * 999);
+            var box = document.getElementsByClassName("box");
+            document.getElementById("col").style.color = kulr;
+            for(i = 0; i < 2; i++){
+                box[i].style.backgroundColor = kulr;
+                box[i].style.borderColor = kulr;
+            }
             document.getElementById("piqlist").innerHTML = piqs;
         }
     </script>
@@ -45,12 +28,24 @@
 <body onload="leia()">
     <table>
         <tr>
-            <td><p id='col' class="hed">Videos</p></td>
-            <td><a href="Leia.html">Pictures</a></td>
-            <td><a href="Random.html">Random Picture</a></td>
+            <td><p id="col" class="hed">Video</p></td>
+            <td>
+                <a href="Leia.html">
+                    <div class="box" id="dol">
+                        <p class="min">Pictures</p>
+                    </div>
+                </a>
+            </td>
+            <td>
+                <a href="Random.html">
+                    <div class="box" id="dol">
+                        <p>Random</p>
+                    </div>
+                </a>
+            </td>
         </tr>
     </table>
-    <div id='piqlist'>
+    <div id="piqlist">
     </div>
 </body>
 </html>

@@ -2,43 +2,20 @@
     <title>
         Leia's World
     </title>
-    <style>
-        table, td {
-            margin: auto;
-            font-weight: bold;
-        }
-        td {
-            width: 15%;
-        }
-        .mid {
-            width: 30%;
-        }
-        .hed {
-            font-size: 10vmin;
-            text-align: center;
-        }
-        .piq {
-            height:20vmin;
-            margin: 1vmin;
-            border: 10px solid;
-            border-radius: 10px;
-            transition: all 6s;
-        }
-        .piq:hover {
-            height:40vmin;
-            transition: all 2s;
-        }
-        .boqs {
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="stylz.css">
     <script>
         function leia() {
             var piqs = "";
             for(i = 0; i < 56; i++) {
                     piqs += "<a href='media/pics/Large/L" + i + ".jpg'><img src='media/pics/small/s" + i + ".jpg' class='piq' style='border-color:#" + Math.floor(Math.random() * 999) + "'></a>";
             }
-            document.getElementById("col").style.color = "#" + Math.floor(Math.random() * 999);
+            var kulr = "#" + Math.floor(Math.random() * 999);
+            var box = document.getElementsByClassName("box");
+            document.getElementById("col").style.color = kulr;
+            for(i = 0; i < 2; i++){
+                box[i].style.backgroundColor = kulr;
+                box[i].style.borderColor = kulr;
+            }
             document.getElementById("piqlist").innerHTML= piqs;
         }
     </script>
@@ -46,9 +23,21 @@
 <body onload="leia()">
     <table>
         <tr>
-            <td><a href="Videos.html">Videos</a></td>
+            <td class="sid">
+                <a href="Videos.html">
+                    <div class="box">
+                        <p class="min">Videos</p>
+                    </div>
+                </a>
+            </td>
             <td class="mid"><p id='col' class="hed">Leia's World</p></td>
-            <td><a href="Random.html">Random</a></td>
+            <td class="sid">
+                <a href="Random.html">
+                    <div class="box">
+                        <p class="min">Random</p>
+                    </div>
+                </a>
+            </td>
         </tr>
     </table>
     <div id='piqlist' class="boqs"></div>

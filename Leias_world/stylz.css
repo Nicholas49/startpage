@@ -1,0 +1,53 @@
+body {
+    margin: 0%;
+}
+table, td {
+    width: 99%;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+}
+td {
+    width: 33%;
+}
+.hed {
+    font-size: 5vmin;
+    text-align: center;
+}
+.box {
+    width: 40%;
+    padding: 0.5vmin;
+    text-decoration: none;
+    font-size: 2vmin;
+    color: white;
+    margin: auto;
+    border: 10px solid blue;
+    border-radius: 10px;
+}
+.vidbox {
+    height:27vmin;
+    width:40vmin;
+    margin: 1vmin;
+    border: 10px solid;
+    border-radius: 10px;
+}
+.mid {
+    width: 50%;
+}
+.sid {
+    width: 25%;
+}
+.piq {
+    height:20vmin;
+    margin: 1vmin;
+    border: 10px solid;
+    border-radius: 10px;
+    transition: all 6s;
+}
+.piq:hover {
+    height:40vmin;
+    transition: all 2s;
+}
+.boqs {
+    margin: auto;
+}
