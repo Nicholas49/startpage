@@ -1,5 +1,5 @@
-<body>
-    <head>
+<html>
+<head>
     <title>
         Leia's Videos
     </title>
@@ -20,14 +20,12 @@
             font-size: 10vmin;
             text-align: center;
         }
-        .piq {
-            height:40vmin;
+        .vidbox {
+            height:27vmin;
+            width:40vmin;
             margin: 1vmin;
             border: 10px solid;
             border-radius: 10px;
-        }
-        .boqs {
-            margin: auto;
         }
     </style>
     <script>
@@ -37,7 +35,7 @@
             var c = 20;
             for(i = 0; i < c; i++) {
                     var n = c - i;
-                    piqs += "<iframe width='420' height='345' src='https://www.youtube.com/embed/" + urlss[i] + "?'></iframe>";
+                    piqs += "<iframe class='vidbox' src='https://www.youtube.com/embed/" + urlss[i] + "?'></iframe>";
             }
             document.getElementById("col").style.color = "#" + Math.floor(Math.random() * 999);
             document.getElementById("piqlist").innerHTML = piqs;
@@ -52,6 +50,7 @@
             <td><a href="Random.html">Random Picture</a></td>
         </tr>
     </table>
-    <div id='piqlist' class="boqs">
+    <div id='piqlist'>
     </div>
 </body>
+</html>
