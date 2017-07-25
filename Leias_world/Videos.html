@@ -7,11 +7,14 @@
     <link rel="stylesheet" type="text/css" href="stylz.css">
     <script>
         function leia() {
-            var urlss = ["u5VffI4Q9D8", "lZKq5pwZV_k", "LWTbLzMRuY4", "PVM9RJl8feI", "Zn_Rbl5Imco", "dpptF6QTf9E", "xRgFUTRc67E", "QiSDlCwgtRU"];
+            var urlss = ["u5VffI4Q9D8", "lZKq5pwZV_k", "LWTbLzMRuY4",
+                "PVM9RJl8feI", "Zn_Rbl5Imco", "dpptF6QTf9E", "xRgFUTRc67E",
+                "QiSDlCwgtRU", "-DRqShOogEs", "TjQ0MWLVFYs", "QgWioWtdFa8",
+                "XOsRsOuwBeY", "x9zrxzitw8Y", "YM5FRPjlOjs", "jrPoRsGD99I"];
+            var w = ["36", "36", "36", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20", "20"];
             var piqs = "";
             var c = 20;
             for(i = 0; i < c; i++) {
-                var n = c - i;
                 piqs += "<iframe class='vidbox' src='https://www.youtube.com/embed/" + urlss[i] + "?'></iframe>";
             }
             var kulr = "#" + Math.floor(Math.random() * 999);
@@ -22,6 +25,10 @@
                 box[i].style.borderColor = kulr;
             }
             document.getElementById("piqlist").innerHTML = piqs;
+            var vidbox = document.getElementsByClassName("vidbox");
+            for(i = 0; i < c; i++) {
+                vidbox[i].style.width = w[i] + "vmin";
+            }
         }
     </script>
 </head>
