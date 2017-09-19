@@ -1,13 +1,13 @@
 body {
     margin: 0%;
 }
-table, td {
+.headr {
     width: 99%;
     margin: auto;
     font-weight: bold;
     text-align: center;
 }
-td {
+.headbx {
     width: 33%;
 }
 .hed {
@@ -49,4 +49,26 @@ td {
 }
 .boqs {
     margin: auto;
+}
+button{
+    padding: 0px;
+    background-color: white;
+    border: none;
+}
+.arrowbutton {
+    width: 100%;
+    height: border-box;
+}
+.galbig {
+    width: 100%;
+    max-width: 100%;
+}
+.gall {
+    display: block;
+    max-height: 87vh;
+    max-width: 100%;
+    margin: auto;
+}
+.top {
+    vertical-align: top;
 }

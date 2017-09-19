@@ -6,8 +6,8 @@
     <script>
         function leia() {
             var piqs = "";
-            for(i = 0; i < 56; i++) {
-                    piqs += "<a href='media/pics/Large/L" + i + ".jpg'><img src='media/pics/small/s" + i + ".jpg' class='piq' style='border-color:#" + Math.floor(Math.random() * 999) + "'></a>";
+            for(i = 0; i < 55; i++) {
+                    piqs += '<button onclick="gallery(\'' + i + '\')"><img src="media/pics/small/s' + i + '.jpg" class="piq" style="border-color:#' + Math.floor(Math.random() * 999) + '"></button>';
             }
             var kulr = "#" + Math.floor(Math.random() * 999);
             var box = document.getElementsByClassName("box");
@@ -18,20 +18,33 @@
             }
             document.getElementById("piqlist").innerHTML= piqs;
         }
+        function gallery(piq) {
+            piq = Number(piq);
+            var piqplus = piq + 1;
+            var piqmin = piq - 1;
+            if(piq === 54){
+                piqplus = 0;
+            }
+            if(piq === 0){
+                piqmin = 54;
+            }
+            var leftar = '<table class="galbig"><tr><td class="galr"><button class="arrowbutton" onclick="gallery(\'' + piqmin + '\')"><img src="media/utility/la.png"></button></td><td class="top">';
+            document.getElementById("piqlist").innerHTML= leftar + '<img src="media/pics/Large/L' + piq + '.jpg" class="gall"></td><td class="galr"><button class="arrowbutton" onclick="gallery(\'' + piqplus + '\')"><img src="media/utility/ra.png"></button></td></tr></table>';
+        }
     </script>
 </head>
 <body onload="leia()">
-    <table>
+    <table class="headr">
         <tr>
-            <td class="sid">
+            <td class="headbx sid">
                 <a href="Videos.html">
                     <div class="box">
                         <p class="min">Videos</p>
                     </div>
                 </a>
             </td>
-            <td class="mid"><p id='col' class="hed">Leia's World</p></td>
-            <td class="sid">
+            <td class="mid"><a href="Leia.html"><p id='col' class="hed">Leia's World</p></a></td>
+            <td class="headbx sid">
                 <a href="Random.html">
                     <div class="box">
                         <p class="min">Random</p>
