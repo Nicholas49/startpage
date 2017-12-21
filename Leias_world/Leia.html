@@ -6,7 +6,7 @@
     <script>
         function leia() {
             var piqs = "";
-            for(i = 68; i >= 0; i--) {
+            for(i = 78; i >= 0; i--) {
                     piqs += '<button onclick="gallery(\'' + i + '\')"><img src="media/pics/small/s' + i + '.jpg" class="piq" style="border-color:#' + Math.floor(Math.random() * 999) + '"></button>';
             }
             var kulr = "#" + Math.floor(Math.random() * 999);
@@ -23,9 +23,9 @@
             var piqplus = piq - 1;
             var piqmin = piq + 1;
             if(piq === 0){
-                piqplus = 68;
+                piqplus = 78;
             }
-            if(piq === 68){
+            if(piq === 78){
                 piqmin = 0;
             }
             var leftar = '<table class="galbig"><tr><td class="galr"><button class="arrowbutton" onclick="gallery(\'' + piqmin + '\')"><img src="media/utility/la.png"></button></td><td class="top">';
