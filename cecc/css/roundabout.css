@@ -1,0 +1,69 @@
+/* Common Scroller Styles */
+
+.roundabout-holder {
+	list-style:none;
+	margin:0px auto;
+}
+.roundabout-moveable-item {
+	font-size:12px!important;
+
+	cursor:pointer;
+	padding:5px;
+	border:1px solid #aaaaaa;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	background:#f9f9f9;
+}
+.roundabout-moveable-item img {
+	height:100%;
+	width:100%;
+	background-color:#FFFFFF;
+	margin:0;
+}
+.roundabout-in-focus {
+	cursor:auto;
+}
+.roundabout-in-focus:hover {
+	-webkit-box-shadow:0px 0px 20px #787878;
+	-moz-box-shadow:0px 0px 20px #787878;
+	background:#f9f9f9;
+}
+.roundabout-holder span {
+	display:none;
+	font-size:12px;
+}
+.roundabout-in-focus:hover span {
+	display:inline;
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	padding:8px 20px;
+	background:#f9f9f9;
+	color:#000000;
+	z-index:999;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topLeft: 5px;
+	font-size : 12px;
+	border-left:1px solid #aaaaaa;
+	border-top:1px solid #aaaaaa;
+}
+.roundabout-in-focus:hover span i{
+	font-size:10px;
+	color:#7D7D7D;
+}
+.roundabout a:active,  .roundabout a:focus,  .roundabout a:visited {
+	outline:none;
+	text-decoration:none;
+}
+.roundabou li {
+	margin:0
+}
+a img {
+	border:none;
+	outline:0;
+}
+/* Featured Image Slider */
+
+.c5-roundabout-handler {
+	margin:10px 0 40px 0;
+}
